@@ -1,1 +1,49 @@
 $main-font: 'Poppins', sans-serif;
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+header{
+    font-family:$main-font;
+    background-image: url(./assets/severin-candrian-Ug5roZHlC78-unsplash\ 1.png);
+    background-attachment: fixed;
+    background-position: right 183px top;
+    background-repeat: no-repeat;
+}
+#top{
+    padding: 50px 110px 150px 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body {
+    background-color: #F6F6F6;
+    font-family:$main-font;
+}
+.register {
+    display: flex;
+    align-items: center;
+    padding: 2px 0 0 0;
+}
+nav{
+display: flex;
+align-items: center;
+gap: 54px;
+}
+.nav-link{
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+text-decoration:none;
+color:  #777A73;
+}
+#nav-home {
+    color: #588535;
+}
+.gap
+{
+padding-left: 3px; 
+}
+
