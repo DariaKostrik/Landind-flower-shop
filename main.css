@@ -5,10 +5,6 @@
 
 header {
   font-family: "Poppins", sans-serif;
-  background-image: url(./assets/severin-candrian-Ug5roZHlC78-unsplash\ 1.png);
-  background-attachment: fixed;
-  background-position: right 183px top;
-  background-repeat: no-repeat;
 }
 
 #top {
@@ -121,4 +117,8 @@ nav {
   -webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
   border-radius: 35px 10px 0 0;
+}
+
+.background-flower {
+  margin-top: -230px;
 }/*# sourceMappingURL=main.css.map */
