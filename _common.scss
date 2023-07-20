@@ -3,13 +3,10 @@ $main-font: 'Poppins', sans-serif;
     box-sizing: border-box;
     margin: 0;
 }
-body{
-    position: relative;
-}
+
 header{
     font-family:$main-font;
     position: fixed;
-    background-color: F6F6F6;
     left: 0;
     right: 0;
 }
@@ -20,8 +17,9 @@ header{
     align-items: center;
 }
 body {
-    background-color: #F6F6F6;
+    position: relative;
     font-family:$main-font;
+
 }
 .register {
     display: flex;
