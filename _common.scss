@@ -6,7 +6,6 @@ $main-font: 'Poppins', sans-serif;
 
 header{
     font-family:$main-font;
-    position: fixed;
     left: 0;
     right: 0;
 }
@@ -20,6 +19,7 @@ body {
     position: relative;
     font-family:$main-font;
     width: 1920px;
+    background: #F6F6F6;
 
 }
 .register {

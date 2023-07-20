@@ -5,7 +5,6 @@
 
 header {
   font-family: "Poppins", sans-serif;
-  position: fixed;
   left: 0;
   right: 0;
 }
@@ -21,6 +20,7 @@ body {
   position: relative;
   font-family: "Poppins", sans-serif;
   width: 1920px;
+  background: #F6F6F6;
 }
 
 .register {
@@ -65,6 +65,7 @@ nav {
 
 #front-div {
   display: flex;
+  background-color: #F6F6F6;
 }
 
 .head-text {
@@ -214,6 +215,7 @@ nav {
 
 .main-collection {
   padding-top: 120px;
+  padding-bottom: 123px;
   background-color: #FFF;
   color: #22271C;
   font-weight: 500;
@@ -282,15 +284,15 @@ nav {
 }
 
 .p1 {
-  margin-top: 123px;
   justify-content: center;
   display: flex;
   font-size: 40px;
   font-weight: 700;
-  position: absolute;
-  color: black;
+  position: relative;
+  color: #FFF;
   left: 0;
   right: 0;
+  padding-top: 100px;
 }
 
 .p2 {
@@ -299,23 +301,22 @@ nav {
   justify-content: center;
   font-size: 16px;
   font-weight: 400;
-  position: absolute;
-  color: black;
+  position: relative;
+  color: #FFF;
   left: 0;
   right: 0;
   width: 100%;
 }
 
 #fon {
-  margin-top: 120px;
   display: block;
   margin-right: auto;
   margin-left: auto;
-  position: relative;
+  position: absolute;
 }
 
-.rel {
-  position: relative;
+.feature-goods {
+  background-color: #F6F6F6;
 }
 
 .a {
@@ -370,6 +371,7 @@ nav {
   font-weight: 500;
   border-radius: 8px 0 8px 0;
   border-color: #588535;
+  background-color: #FFF;
   border-width: 3px;
   display: block;
   margin-right: auto;
