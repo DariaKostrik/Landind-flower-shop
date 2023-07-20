@@ -244,9 +244,10 @@ nav {
 }
 .main-collection .grid-blocks .block img {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 30px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  bottom: 30px;
 }
 
 .base-cat {
@@ -332,6 +333,7 @@ nav {
   grid-area: a;
   position: relative;
   width: 100%;
+  height: 756px;
 }
 
 .b {
@@ -356,6 +358,7 @@ nav {
   grid-area: e;
   position: relative;
   width: 100%;
+  height: 756px;
 }
 
 .f {

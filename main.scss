@@ -185,9 +185,10 @@ flex-direction: row;
             background-color: rgba(246, 246, 246, 1);
             img{
                 display: block;
-                margin-right: auto;
-                margin-left: auto;
-                margin-bottom: 30px;
+                left: 0;
+                right: 0;
+                position: absolute;
+                bottom: 30px;
             }
         }
     }
@@ -270,6 +271,7 @@ flex-direction: row;
     grid-area:a;
     position: relative;
     width: 100%;
+    height: 756px;
 }
 .b {
     grid-area:b;
@@ -287,10 +289,13 @@ flex-direction: row;
     grid-area:e;
     position: relative;
     width: 100%;
-}.f {
+    height: 756px;
+}
+.f {
     grid-area:f;
     position: relative;
     width: 100%;
+
 }.g {
     grid-area:g;
     position: relative;
