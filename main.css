@@ -231,8 +231,6 @@ nav {
 }
 .main-collection .grid-blocks .block {
   background-color: rgb(246, 246, 246);
-  position: relative;
-  width: 100%;
 }
 .main-collection .grid-blocks .block img {
   display: block;
@@ -240,6 +238,7 @@ nav {
   margin-left: auto;
   bottom: 30px;
   left: 19px;
+  position: absolute;
 }
 
 .base-cat {
@@ -283,30 +282,44 @@ nav {
 
 .a {
   grid-area: a;
+  position: relative;
+  width: 100%;
 }
 
 .b {
   grid-area: b;
+  position: relative;
+  width: 100%;
 }
 
 .c {
   grid-area: c;
+  position: relative;
+  width: 100%;
 }
 
 .d {
   grid-area: d;
+  position: relative;
+  width: 100%;
 }
 
 .e {
   grid-area: e;
+  position: relative;
+  width: 100%;
 }
 
 .f {
   grid-area: f;
+  position: relative;
+  width: 100%;
 }
 
 .g {
   grid-area: g;
+  position: relative;
+  width: 100%;
 }
 
 #fon {
