@@ -195,6 +195,7 @@ flex-direction: row;
     height: 80px;
     position: absolute;
     bottom: 0px;
+    width: 100%;
     #main{
         padding-left: 30px;
         color: #22271C;
@@ -204,6 +205,9 @@ flex-direction: row;
         color: #588535;
         font-size: 16px;
         padding-right: 30px;
+    }
+    span{
+        display: block;
     }
 }
 .base{

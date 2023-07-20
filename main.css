@@ -251,6 +251,7 @@ nav {
   height: 80px;
   position: absolute;
   bottom: 0px;
+  width: 100%;
 }
 .base-cat #main {
   padding-left: 30px;
@@ -261,6 +262,9 @@ nav {
   color: #588535;
   font-size: 16px;
   padding-right: 30px;
+}
+.base-cat span {
+  display: block;
 }
 
 .base {
