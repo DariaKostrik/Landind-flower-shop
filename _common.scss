@@ -3,8 +3,15 @@ $main-font: 'Poppins', sans-serif;
     box-sizing: border-box;
     margin: 0;
 }
+body{
+    position: relative;
+}
 header{
     font-family:$main-font;
+    position: fixed;
+    background-color: F6F6F6;
+    left: 0;
+    right: 0;
 }
 #top{
     padding: 50px 110px 150px 110px;

@@ -3,8 +3,16 @@
   margin: 0;
 }
 
+body {
+  position: relative;
+}
+
 header {
   font-family: "Poppins", sans-serif;
+  position: fixed;
+  background-color: F6F6F6;
+  left: 0;
+  right: 0;
 }
 
 #top {
@@ -67,6 +75,7 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: left;
+  padding-top: 183px;
   padding-left: 110px;
 }
 .head-text p1 {
@@ -119,6 +128,90 @@ nav {
   border-radius: 35px 10px 0 0;
 }
 
-.background-flower {
-  margin-top: -230px;
+#container-with-goods {
+  margin: 129px 0 100px 0;
+  padding-left: 110px;
+  padding-right: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#container-with-goods .plant-in-line {
+  width: 400px;
+  height: 200px;
+  border-radius: 18px;
+  background: #FFF;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  max-width: 100%;
+  max-height: 100%;
+}
+#container-with-goods .plant-in-line.picked {
+  height: 280px;
+  background: #588535;
+}
+
+.image-inline-box {
+  align-self: center;
+  width: 37%;
+}
+.image-inline-box img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.basic-inf {
+  width: 63%;
+  justify-content: end;
+}
+.basic-inf p {
+  padding: 40px 0 10px 0;
+  color: #22271C;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.basic-inf #p-picked {
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 40px 0 10px 0;
+}
+.basic-inf span {
+  color: #777A73;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.basic-inf #picked {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.basic-inf #price-picked {
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.basic-inf #price {
+  color: #22271C;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.basic-inf #button {
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #FBFDFE;
+  color: #588535;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border-color: #588535;
 }/*# sourceMappingURL=main.css.map */
