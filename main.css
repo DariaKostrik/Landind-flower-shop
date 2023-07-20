@@ -212,32 +212,43 @@ nav {
 }
 
 .main-collection {
-  padding: 120px 200px 0 200px;
+  padding-top: 120px;
   background-color: #FFF;
   color: #22271C;
   font-weight: 500;
+  justify-content: center;
+}
+.main-collection img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 .main-collection .grid-blocks {
   display: grid;
   grid-template-areas: "a b c" "a d e" "f g e";
   gap: 30px;
-  grid-template-rows: 497px 481px 481px;
+  grid-template-columns: 497px 481px 481px;
 }
 .main-collection .grid-blocks .block {
   background-color: rgb(246, 246, 246);
+  position: relative;
+  width: 100%;
 }
 .main-collection .grid-blocks .block img {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  bottom: 30px;
+  left: 19px;
 }
 
 .base-cat {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   height: 80px;
-  width: 100%;
+  position: absolute;
+  bottom: 0px;
 }
 .base-cat #main {
   padding-left: 30px;
@@ -300,4 +311,19 @@ nav {
 
 #fon {
   margin-top: 120px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.view-all-button {
+  width: 182px;
+  height: 60px;
+  color: #588535;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 8px 0 8px 0;
+  border-color: #588535;
+  border-width: 3px;
 }/*# sourceMappingURL=main.css.map */
