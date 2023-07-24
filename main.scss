@@ -6,8 +6,8 @@
    
 }
 .background-flower{
-    position: absolute;
-    margin-top: -80px;
+    position: relative;
+    margin-top: -90px;
 }
 .top-buttons{
     display: flex;
@@ -168,11 +168,13 @@ flex-direction: row;
     font-weight: 500;
     justify-content: center;
 
-    img{
+    img {
         padding: 0 15px;
         display: block;
         margin-right: auto;
         margin-left: auto;
+        width: 100%;
+        z-index: 1;
     }
 
     .grid-blocks{
@@ -180,16 +182,19 @@ flex-direction: row;
         grid-template-areas: "a b c" "a d e" "f g e";
         justify-content: center; 
         gap: 30px;
-        grid-template-columns: 497px 481px 481px; 
+        grid-template-columns: 1fr 1fr 1fr; 
         width: 100%;
         .block{
             background-color: rgba(246, 246, 246, 1);
+
             img{
                 display: block;
                 left: 0;
                 right: 0;
                 position: absolute;
                 bottom: 30px;
+                width: auto;
+                z-index: 0;
             }
         }
     }
@@ -269,7 +274,8 @@ flex-direction: row;
         display: block;
         margin-right: auto;
         margin-left: auto;
-        position: absolute;
+        position: relative;
+        width: 100%;
     }
 .feature-goods{
     background-color: #F6F6F6;
@@ -277,36 +283,31 @@ flex-direction: row;
 .a {
     grid-area:a;
     position: relative;
-    width: 100%;
     height: 756px;
 }
 .b {
     grid-area:b;
     position: relative;
-    width: 100%;
+
 }.c {
     grid-area:c;
     position: relative;
-    width: 100%;
+
 }.d {
     grid-area:d;
     position: relative;
-    width: 100%;
 }.e{
     grid-area:e;
     position: relative;
-    width: 100%;
     height: 756px;
 }
 .f {
     grid-area:f;
     position: relative;
-    width: 100%;
 
 }.g {
     grid-area:g;
     position: relative;
-    width: 100%;
 }
 .view-all-button{
     display: flex;
@@ -413,12 +414,14 @@ flex-direction: row;
             width: 100%;
             .block{
                 background-color: rgba(246, 246, 246, 1);
+                width: 100%;
                 img{
                     display: block;
                     left: 0;
                     right: 0;
                     bottom: 30px;
                     position: absolute;
+                    width: 100%;
                 }
             }
         }
@@ -426,27 +429,34 @@ flex-direction: row;
         .a {
             grid-area:a;
             position: relative;
-            height: 100%;
+            width: 100%;
+            height: 756px;
         }
         .b {
             grid-area:b;
             position: relative;
+            width: 100%;
         }.c {
             grid-area:c;
             position: relative;
+            width: 100%;
         }.d {
             grid-area:d;
             position: relative;
+            width: 100%;
         }.e{
             grid-area:e;
             position: relative;
-            height: 100%;
+            width: 100%;
+            height: 756px;
         }
         .f {
             grid-area:f;
             position: relative;
+            width: 100%;
         }.g {
             grid-area:g;
             position: relative;
+            width: 100%;
         }
 }
