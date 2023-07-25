@@ -281,8 +281,9 @@ nav {
   grid-template-areas: "a b c" "a d e" "f g e";
   justify-content: center;
   gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 34% 33% 33%;
   width: 100%;
+  padding: 0 200px;
 }
 .main-collection .grid-blocks .block {
   background-color: rgb(246, 246, 246);
@@ -292,7 +293,8 @@ nav {
   left: 0;
   right: 0;
   position: absolute;
-  bottom: 30px;
+  bottom: 3.97%;
+  max-height: 84%;
   width: auto;
   z-index: 0;
 }
@@ -387,7 +389,8 @@ nav {
 .a {
   grid-area: a;
   position: relative;
-  height: 756px;
+  padding-top: 152.11%;
+  width: 100%;
 }
 
 .b {
@@ -408,7 +411,8 @@ nav {
 .e {
   grid-area: e;
   position: relative;
-  height: 756px;
+  padding-top: 157.17%;
+  width: 100%;
 }
 
 .f {
