@@ -179,6 +179,8 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 #container-with-goods .plant-in-line {
   width: 400px;
@@ -194,6 +196,16 @@ nav {
 #container-with-goods .plant-in-line.picked {
   height: 280px;
   background: #588535;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: auto;
 }
 
 .image-inline-box {
@@ -335,14 +347,14 @@ nav {
   display: flex;
   flex-direction: column;
 }
-.base p1 {
+.base #p1 {
   margin-top: 123px;
   justify-content: center;
   display: flex;
   font-size: 40px;
   font-weight: 700;
 }
-.base p2 {
+.base #p2 {
   display: flex;
   justify-content: center;
   color: #777A73;
@@ -350,7 +362,7 @@ nav {
   font-weight: 400;
   margin-bottom: 50px;
 }
-.base p2 br {
+.base #p2 br {
   display: none;
 }
 
@@ -375,12 +387,12 @@ nav {
   z-index: 3;
 }
 
-.feature-goods {
+.plant-care {
   background-color: #F6F6F6;
   height: 504px;
   position: relative;
 }
-.feature-goods .info-card {
+.plant-care .info-card {
   display: flex;
   justify-content: space-around;
   position: absolute;
@@ -391,7 +403,7 @@ nav {
   width: 100%;
   gap: 30px;
 }
-.feature-goods .info-card #card {
+.plant-care .info-card #card {
   width: 487px;
   height: 160px;
   border-radius: 10px;
