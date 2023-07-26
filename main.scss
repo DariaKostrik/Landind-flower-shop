@@ -479,13 +479,51 @@ flex-direction: row;
     justify-content: center; 
     margin: 0 200px;
     gap: 30px;
-    .block{
+    .form-block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 10px;
         background-color: #F6F6F6;
         width: 100%;
-        padding-top: 73.77%;
+        &.left{
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+        }
+        &.center{
+            position: relative;
 
+        }
+        &.right{
+            clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+           
+        }
+        img{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30.3%;
+        padding-right: 30.3%;
+        height: auto;
+        width: 100%;
+       
     }
+    .button-bio{
+        position: absolute;
+        padding: 15px 52px 15px 44px;
+        width: 200px;
+        height: 60px;
+        border-radius: 10px 0px;
+        background-color: #588535;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 500;
+        bottom: 30px;
+    }
+    .correction{
+        position: relative;
+        right: 8.21%;
+    }
+
+}
 
 }
 
