@@ -81,17 +81,20 @@ nav {
     position: absolute;
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 10px;
     background-color: #F6F6F6;
     justify-content: space-between;
     right: 0px;
     top: 110px;
-    padding: 10px 27px 10px 10px;
+    padding: 50px 27px 50px 10px;
     width: 100%;
   }
   body nav a {
     display: block;
     align-items: end;
+  }
+  body .nav-link {
+    font-size: 13px;
   }
 }
 .logo {
@@ -776,5 +779,62 @@ nav {
   .main-collection {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+  .base {
+    flex-direction: column;
+  }
+  .base #p1 {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  .base #p2 {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .base #p2 br {
+    display: none;
+  }
+  .main-collection {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .main-collection .img {
+    padding: 0 10px;
+    top: 3%;
+    bottom: 0;
+  }
+  .main-collection .table {
+    padding: 0 15px;
+  }
+  .main-collection .grid-blocks {
+    gap: 5px;
+    padding: 0 10px;
+  }
+  .base-cat {
+    height: 30px;
+    -webkit-backdrop-filter: blur(25px);
+            backdrop-filter: blur(25px);
+  }
+  .base-cat #main {
+    padding-left: 5px;
+    font-size: 10px;
+  }
+  .base-cat #additional {
+    font-size: 6px;
+    padding-right: 5px;
+  }
+  .view-all-button {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 3px 0 3px 0;
+    border-color: #588535;
+    background-color: #FFF;
+    border-width: 1px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=main.css.map */

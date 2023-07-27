@@ -79,19 +79,21 @@ padding-left: 3px;
                 position: absolute;
                 display: flex;
                 align-items: center;
-                gap: 28px;
+                gap: 10px;
                 background-color: #F6F6F6;
                 justify-content: space-between;
                 right: 0px;
                 top: 110px;
-                padding: 10px 27px 10px 10px;
+                padding: 50px 27px 50px 10px;
                 width: 100%;
                 a {
                     display: block;
                     align-items: end;
                 }
             }
-
+         .nav-link{
+                font-size: 13px;
+                }
     }
     
 }
