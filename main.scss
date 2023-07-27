@@ -387,7 +387,24 @@ flex-direction: row;
     justify-content:center;
     gap: 30px;
     
-    
+    .fut-plant-in-line:hover {
+        border-color: #588535;
+        .nested-field{
+            background-color: #588535;
+            .price{
+                color: #FFF;
+            }
+        }
+        .button-cart{
+            fill: #FFF;
+            stroke-width: 1px;
+            stroke: #6C944E;
+            background-color: #E5E5E5;
+        }
+        .flower-name{
+            color: #FFF;
+        }
+    }
     .fut-plant-in-line{
         display: flex;
         align-self: flex-end;
@@ -400,9 +417,7 @@ flex-direction: row;
         background-color: #FFF;
         max-width: 100%;
         max-height: 100%;
-        &.picked{
-            border-color: #588535;
-        }
+        
         #plants{
             margin-top: 44px;
             margin-bottom: 45px;
@@ -420,9 +435,7 @@ flex-direction: row;
             border: 1px solid rgba(125, 158, 100, 0.1);
             background-color: #E5E5E5;
             border-radius: 0px 0px 10px 10px;
-            &.picked{
-                background-color: #588535;
-            }
+           
             .price{
                 color: #22271C;
                 text-align:right;
@@ -431,9 +444,6 @@ flex-direction: row;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 30px; 
-                &.picked{
-                    color: #FFF;
-                }
             }
             .stars{
                 display: flex;
@@ -453,12 +463,6 @@ flex-direction: row;
             border-radius: 5px 0 5px 0;
             width: 130px;
             height: 40px;
-            &.picked{
-                fill: #FFF;
-                stroke-width: 1px;
-                stroke: #6C944E;
-                background-color: #E5E5E5;
-            }
         }
         .flower-name{
             color: #22271C;
@@ -467,9 +471,6 @@ flex-direction: row;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
-            &.picked{
-                color: #FFF;
-            }
         }
     }
 }

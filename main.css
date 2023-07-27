@@ -488,6 +488,24 @@ nav {
   justify-content: center;
   gap: 30px;
 }
+#container-with-future-goods .fut-plant-in-line:hover {
+  border-color: #588535;
+}
+#container-with-future-goods .fut-plant-in-line:hover .nested-field {
+  background-color: #588535;
+}
+#container-with-future-goods .fut-plant-in-line:hover .nested-field .price {
+  color: #FFF;
+}
+#container-with-future-goods .fut-plant-in-line:hover .button-cart {
+  fill: #FFF;
+  stroke-width: 1px;
+  stroke: #6C944E;
+  background-color: #E5E5E5;
+}
+#container-with-future-goods .fut-plant-in-line:hover .flower-name {
+  color: #FFF;
+}
 #container-with-future-goods .fut-plant-in-line {
   display: flex;
   align-self: flex-end;
@@ -500,9 +518,6 @@ nav {
   background-color: #FFF;
   max-width: 100%;
   max-height: 100%;
-}
-#container-with-future-goods .fut-plant-in-line.picked {
-  border-color: #588535;
 }
 #container-with-future-goods .fut-plant-in-line #plants {
   margin-top: 44px;
@@ -522,9 +537,6 @@ nav {
   background-color: #E5E5E5;
   border-radius: 0px 0px 10px 10px;
 }
-#container-with-future-goods .fut-plant-in-line .nested-field.picked {
-  background-color: #588535;
-}
 #container-with-future-goods .fut-plant-in-line .nested-field .price {
   color: #22271C;
   text-align: right;
@@ -533,9 +545,6 @@ nav {
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
-}
-#container-with-future-goods .fut-plant-in-line .nested-field .price.picked {
-  color: #FFF;
 }
 #container-with-future-goods .fut-plant-in-line .nested-field .stars {
   display: flex;
@@ -555,12 +564,6 @@ nav {
   width: 130px;
   height: 40px;
 }
-#container-with-future-goods .fut-plant-in-line .button-cart.picked {
-  fill: #FFF;
-  stroke-width: 1px;
-  stroke: #6C944E;
-  background-color: #E5E5E5;
-}
 #container-with-future-goods .fut-plant-in-line .flower-name {
   color: #22271C;
   font-family: "Poppins", sans-serif;
@@ -568,9 +571,6 @@ nav {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-}
-#container-with-future-goods .fut-plant-in-line .flower-name.picked {
-  color: #FFF;
 }
 
 #dots {
