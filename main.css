@@ -208,7 +208,7 @@ nav {
   align-self: center;
   width: 37%;
 }
-#container-with-goods .plant-in-line .image-inline-box img {
+#container-with-goods .plant-in-line .image-inline-box .plant-photo {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -216,6 +216,35 @@ nav {
 #container-with-goods .plant-in-line .basic-inf {
   width: 63%;
   justify-content: end;
+}
+#container-with-goods .plant-in-line .basic-inf .like {
+  position: relative;
+  right: 20px;
+  top: 20px;
+}
+#container-with-goods .plant-in-line .basic-inf .like .heart {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+#container-with-goods .plant-in-line .basic-inf .like .heart-green {
+  display: none;
+}
+#container-with-goods .plant-in-line .basic-inf .like .heart-white {
+  display: none;
+}
+#container-with-goods .plant-in-line .basic-inf .like:active .heart {
+  display: none;
+}
+#container-with-goods .plant-in-line .basic-inf .like:active .heart-green {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+#container-with-goods .plant-in-line .basic-inf .like:active .heart-white {
+  display: none;
 }
 #container-with-goods .plant-in-line .basic-inf #name-of-flo {
   padding: 40px 0 10px 0;
@@ -251,6 +280,9 @@ nav {
 #container-with-goods .plant-in-line:hover {
   height: 280px;
   background: #588535;
+}
+#container-with-goods .plant-in-line:hover .basic-inf .heart:active {
+  color: #F6F6F6;
 }
 #container-with-goods .plant-in-line:hover .basic-inf #name-of-flo {
   color: #FFF;
@@ -731,15 +763,46 @@ nav {
   #container-with-goods .plant-in-line .image-inline-box {
     padding: 7px;
   }
-  #container-with-goods .plant-in-line .image-inline-box img {
+  #container-with-goods .plant-in-line .image-inline-box .plant-photo {
     width: 100%;
     height: auto;
   }
   #container-with-goods .plant-in-line .basic-inf {
     justify-content: end;
+    position: relative;
+    line-height: 10px;
   }
-  #container-with-goods .plant-in-line .basic-inf br {
+  #container-with-goods .plant-in-line .basic-inf .like {
+    top: 3px;
+    right: 3px;
+  }
+  #container-with-goods .plant-in-line .basic-inf .like .heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 10%;
+  }
+  #container-with-goods .plant-in-line .basic-inf .like .heart-white {
     display: none;
+  }
+  #container-with-goods .plant-in-line .basic-inf .like .heart-green {
+    display: none;
+  }
+  #container-with-goods .plant-in-line .basic-inf .like:active {
+    top: 3px;
+    right: 3px;
+  }
+  #container-with-goods .plant-in-line .basic-inf .like:active .heart {
+    display: none;
+  }
+  #container-with-goods .plant-in-line .basic-inf .like:active .heart-white {
+    display: none;
+  }
+  #container-with-goods .plant-in-line .basic-inf .like:active .heart-green {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 10%;
   }
   #container-with-goods .plant-in-line .basic-inf #name-of-flo {
     padding: 10px 0 4px 0;
@@ -761,6 +824,35 @@ nav {
   }
   #container-with-goods .plant-in-line:hover {
     height: 130px;
+  }
+  #container-with-goods .plant-in-line:hover .basic-inf .like {
+    top: 3px;
+    right: 3px;
+  }
+  #container-with-goods .plant-in-line:hover .basic-inf .like .heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 10%;
+  }
+  #container-with-goods .plant-in-line:hover .basic-inf .like .heart-white {
+    display: none;
+  }
+  #container-with-goods .plant-in-line:hover .basic-inf .like .heart-green {
+    display: none;
+  }
+  #container-with-goods .plant-in-line:hover .basic-inf .like:active .heart {
+    display: none;
+  }
+  #container-with-goods .plant-in-line:hover .basic-inf .like:active .heart-green {
+    display: none;
+  }
+  #container-with-goods .plant-in-line:hover .basic-inf .like:active .heart-white {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 10%;
   }
   #container-with-goods .plant-in-line:hover .basic-inf #name-of-flo {
     font-size: 9px;
