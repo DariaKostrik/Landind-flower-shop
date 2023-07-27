@@ -82,7 +82,7 @@ flex-direction: row;
     padding-right: 120px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around ;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
     
@@ -553,7 +553,7 @@ flex-direction: row;
         flex-direction: column;
         }
     .head-text {
-            padding-top: 90px;
+            padding-top: 110px;
             padding-left: 15px;
             text-align: center;
             .pp1{
@@ -585,19 +585,15 @@ flex-direction: row;
             width: 100%;
             flex-direction: column;
             .button{
-                background: #588535; 
-                color: #FFFFFF; 
-                text-decoration-line: none;
-                width: 150px;
+                width: 145px;
                 height: 40px;
                 font-size: 15px;
-                font-weight: 500;
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
                 border-radius: 0;
                 margin: 0 auto;
                     
                 &.white{
-                    width: 150px;
+                    width: 145px;
                     background-color: #FFFFFF;
                     color: #588535;
                     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -606,67 +602,88 @@ flex-direction: row;
                 }
             }
             }
-        .main-collection{
-            img{
-                width: 100%;
-                height: 100%;
-            }
-        #fon{
-            width: 100%;
-            height: 100%;
-        }
-        }
-        .grid-blocks{
-            display: grid;
-            grid-auto-flow:row;
-            justify-content: center; 
-            gap: 10px;
-            width: 100%;
-            .block{
-                background-color: rgba(246, 246, 246, 1);
-                width: 100%;
-                img{
-                    display: block;
-                    left: 0;
-                    right: 0;
-                    bottom: 30px;
-                    position: absolute;
-                    width: 100%;
+    
+    #container-with-goods{
+        margin: 20px 0 20px 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+                
+                .plant-in-line{
+                    width: 160px;
+                    height: 90px;
+                    border-radius: 8px;
+                    background: #FFF;
+                    display: flex;
+                    flex-direction: row;
+                    align-self: flex-end;
+                    max-width: 100%;
+                    max-height: 100%; 
+            
+                    .image-inline-box{
+                        padding: 7px;
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .basic-inf{
+                        justify-content:end;
+                        br{
+                            display: none;
+                        }
+                        #name-of-flo{
+                            padding: 10px 0 4px 0;
+                            font-size: 8px;
+                        }
+                        .inf-about-flo{
+                            font-size: 7px;
+                            font-weight: 400;
+                        }
+                        .price{
+                            font-size: 8px;
+                        }
+                    }
+                    #button {
+                        width: 75px;
+                        height: 18px;
+                        border-radius: 2px;
+                        font-size: 7px;
+                        display: none;
+                    }
                 }
+                .plant-in-line:hover {
+                    height: 130px;
+                    .basic-inf{
+                        #name-of-flo{
+                            font-size: 9px;
+                            padding: 10px 0 4px 0;
+                        }
+                        .inf-about-flo{
+                            font-size: 8px;
+                        }
+                        .price{
+                            font-size: 10px;
+                        }
+                        br{
+                            display:block;
+                        }
+                    }
+                    #button{
+                        display:block;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        left: 0;
+                     }
+                }
+                
             }
-        }
+            .container1{
+                gap:10px;
+                
+            }
 
-        .a {
-            grid-area:a;
-            position: relative;
-            width: 100%;
-            height: 756px;
-        }
-        .b {
-            grid-area:b;
-            position: relative;
-            width: 100%;
-        }.c {
-            grid-area:c;
-            position: relative;
-            width: 100%;
-        }.d {
-            grid-area:d;
-            position: relative;
-            width: 100%;
-        }.e{
-            grid-area:e;
-            position: relative;
-            width: 100%;
-            height: 756px;
-        }
-        .f {
-            grid-area:f;
-            position: relative;
-            width: 100%;
-        }.g {
-            grid-area:g;
-            position: relative;
-            width: 100%;
-        }
+
 }
