@@ -10,6 +10,14 @@ header {
   position: absolute;
 }
 
+footer {
+  font-family: "Poppins", sans-serif;
+  background-color: F6F6F6;
+  width: 100%;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
 #top {
   padding: 50px 110px 0 110px;
   display: flex;

@@ -11,6 +11,12 @@ header{
     right: 0;
     position: absolute;
 }
+footer{
+    font-family:$main-font;
+    background-color: F6F6F6;
+    width: 100%;
+    min-height: fit-content;
+}
 #top{
     padding: 50px 110px 0 110px;
     display: flex;
