@@ -86,7 +86,7 @@ nav {
     justify-content: space-between;
     right: 0px;
     top: 110px;
-    padding: 50px 27px 50px 10px;
+    padding: 55px 27px 55px 10px;
     width: 100%;
   }
   body nav a {
@@ -827,14 +827,109 @@ nav {
     width: 100px;
     height: 30px;
     font-size: 15px;
-    font-weight: 500;
     border-radius: 3px 0 3px 0;
-    border-color: #588535;
-    background-color: #FFF;
     border-width: 1px;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
     margin-top: 20px;
+  }
+  #container-with-future-goods {
+    margin: 30px 0 20px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+    gap: 10px;
+  }
+  #container-with-future-goods .fut-plant-in-line {
+    width: 90px;
+    height: 115px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  #container-with-future-goods .fut-plant-in-line #plants {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: auto;
+    width: 30%;
+    height: auto;
+  }
+  #container-with-future-goods .fut-plant-in-line .nested-field {
+    padding: 7px;
+    height: 50px;
+    width: 100%;
+    border-radius: 0px 0px 3px 3px;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+  }
+  #container-with-future-goods .fut-plant-in-line .nested-field .price {
+    font-size: 7px;
+    text-align: center;
+    line-height: normal;
+  }
+  #container-with-future-goods .fut-plant-in-line .nested-field .stars {
+    display: none;
+  }
+  #container-with-future-goods .fut-plant-in-line .button-cart {
+    font-size: 7px;
+    width: 70px;
+    height: 15px;
+    line-height: normal;
+    text-align: center;
+    border-width: 1px;
+  }
+  #container-with-future-goods .fut-plant-in-line .flower-name {
+    font-size: 7px;
+    text-align: center;
+  }
+  #dots {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    width: 10%;
+    height: auto;
+  }
+  #content-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: 0 20px;
+    gap: 5px;
+  }
+  #content-block .form-block {
+    border-radius: 3px;
+  }
+  #content-block .form-block.left {
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  }
+  #content-block .form-block.center {
+    position: relative;
+  }
+  #content-block .form-block.right {
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+            clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+  }
+  #content-block .form-block img {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 30.3%;
+    padding-right: 30.3%;
+    height: auto;
+    width: 100%;
+  }
+  #content-block .form-block .button-bio {
+    position: absolute;
+    padding: 0 3px 5px 5px;
+    width: 80px;
+    height: 20px;
+    border-radius: 3px 0px;
+    font-size: 12px;
+    bottom: 3px;
+    line-height: normal;
+  }
+  #content-block .form-block .correction {
+    position: relative;
+    right: 8.21%;
   }
 }/*# sourceMappingURL=main.css.map */
