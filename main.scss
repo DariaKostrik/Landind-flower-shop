@@ -1,23 +1,27 @@
 @import 'common';
-.logo{
+
+.logo {
     padding: 2px 0 0 0;
     display: flex;
     align-items: center;
-   
-}
-.background-flower{
-    position: relative;
-    width: 100%;
-   
+
 }
 
-.top-buttons{
-    display: flex;
-    
+.background-flower {
+    position: relative;
+    width: 100%;
+
 }
+
+.top-buttons {
+    display: flex;
+
+}
+
 #front-div {
     display: flex;
-    background-color: #F6F6F6;;
+    background-color: #F6F6F6;
+    ;
     overflow: hidden;
 }
 
@@ -27,19 +31,22 @@
     text-align: left;
     padding-top: 183px;
     padding-left: 110px;
-    .pp1{
+
+    .head-ornamental {
         font-size: 24px;
         font-weight: 600;
         line-height: 30px;
     }
-    .pp2{
+
+    .head-shop-main {
         font-size: 100px;
         font-weight: 500;
         line-height: 125px;
         width: 736px;
         padding-top: 20px;
     }
-    .pp3 {
+
+    .head-description {
         font-size: 24px;
         font-weight: 400;
         line-height: 40px;
@@ -48,135 +55,154 @@
         padding: 50px 0;
     }
 }
-#top-buttons{
-display: flex;
-flex-direction: row;
-.button{
+
+#top-buttons {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: #588535; 
-    color: #FFFFFF; 
-    text-decoration-line: none;
-    width: 202px;
-    height: 60px;
-    font-size: 20px;
-    font-weight: 500;
-    clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
-    border-radius: 10px 0 35px 0;
-        
-    &.white{
-        width: 194px;
-        background-color: #FFFFFF;
-        color: #588535;
-        clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
-        border-radius: 35px 10px 0 0;
+    flex-direction: row;
+
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: #588535;
+        color: #FFFFFF;
+        text-decoration-line: none;
+        width: 202px;
+        height: 60px;
+        font-size: 20px;
+        font-weight: 500;
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+        border-radius: 10px 0 35px 0;
+
+        &.white {
+            width: 194px;
+            background-color: #FFFFFF;
+            color: #588535;
+            clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+            border-radius: 35px 10px 0 0;
+        }
     }
 }
-}
 
-.add-cont{
+.add-cont {
     width: 100%;
     position: absolute;
-    margin-top: 9%;
+    margin-top: 14%;
 }
 
-#container-with-goods{
-    margin: 129px 90px 100px 90px;
+.container-for-plant-in-line {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap:30px;
+    & :first-child{
+        transition: all 0.5s 0.3s;
+    }
+}
+
+#container-with-goods {
+    margin: 129px 70px 100px 110px;
     // padding-left: 110px;
     // padding-right: 120px;
     display: flex;
     flex-direction: row;
     // justify-content: center;
     flex-wrap: nowrap;
-    gap: 30px;
+    // gap: 30px;
     position: relative;
     overflow: hidden;
-    padding: 0 25px;
-    &:first-child{
-        transition: all 0.5 ease;
-    }
-    
-    .plant-in-line{
+
+    .plant-in-line {
         width: 400px;
         height: 200px;
         border-radius: 18px;
         background: #FFF;
         display: flex;
         flex-direction: row;
-        // align-self: flex-end;
+        align-self: flex-end;
         // max-width: 100%;
         // max-height: 100%; 
         flex-shrink: 0;
 
 
-        .image-inline-box{
+        .image-inline-box {
             align-self: center;
             width: 37%;
-            .plant-photo{
+
+            .plant-photo {
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
             }
         }
-        .basic-inf{
+
+        .basic-inf {
             width: 63%;
-            justify-content:end;
-            .like{
+            justify-content: end;
+
+            .like {
                 position: relative;
                 right: 20px;
-                top:20px;
-                .heart{
-                    display:block;
+                top: 20px;
+
+                .heart {
+                    display: block;
                     position: absolute;
                     right: 20px;
-                    top:20px;
+                    top: 20px;
                 }
-                
-                .heart-green{
-                 display: none;
+
+                .heart-green {
+                    display: none;
                 }
-                .heart-white{
+
+                .heart-white {
                     display: none;
                 }
             }
-            
-            .like:active{
-                .heart{
+
+            .like:active {
+                .heart {
                     display: none;
                 }
-                .heart-green{
-                    display:block;
+
+                .heart-green {
+                    display: block;
                     position: absolute;
                     right: 20px;
-                    top:20px;
-                    }
-                .heart-white{
+                    top: 20px;
+                }
+
+                .heart-white {
                     display: none;
-                    }
+                }
 
             }
-            #name-of-flo{
+
+            #name-of-flo {
                 padding: 40px 0 10px 0;
                 color: #22271C;
                 font-family: $main-font;
                 font-size: 20px;
                 font-weight: 600;
             }
-            .inf-about-flo{
+
+            .inf-about-flo {
                 color: #777A73;
                 font-family: $main-font;
                 font-size: 16px;
                 font-weight: 400;
             }
-            .price{
+
+            .price {
                 color: #22271C;
                 font-family: $main-font;
                 font-size: 20px;
                 font-weight: 700;
             }
         }
+
         #button {
             width: 130px;
             height: 40px;
@@ -190,74 +216,118 @@ flex-direction: row;
             display: none;
         }
     }
+
     .plant-in-line:hover {
         height: 280px;
         background: #588535;
-        .basic-inf{   
-            .heart:active{
-                color:#F6F6F6;
-            }        
-            #name-of-flo{
+        transition-delay: 0.1s;
+
+        .basic-inf {
+            position: relative;
+            right: 20px;
+            top: 20px;
+
+            .like {
+                .heart {
+                    display: block;
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                    z-index: 6;
+                }
+
+                .heart-green {
+                    display: none;
+                }
+
+                .heart-white {
+                    display: none;
+                }
+            }
+
+            .like:active {
+                color: #F6F6F6;
+
+                .heart-white {
+                    display: block;
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                    z-index: 6;
+                }
+
+                .heart {
+                    display: none;
+                }
+
+                .heart-white {
+                    display: none;
+                }
+            }
+
+            #name-of-flo {
                 color: #FFF;
                 font-family: $main-font;
                 font-size: 24px;
                 font-weight: 700;
                 padding: 40px 0 10px 0;
             }
-            .inf-about-flo{
+
+            .inf-about-flo {
                 color: rgba(255, 255, 255, 0.60);
                 font-family: $main-font;
                 font-size: 20px;
                 font-weight: 400;
             }
-            .price{
+
+            .price {
                 color: #FFF;
                 font-family: $main-font;
                 font-size: 24px;
                 font-weight: 700;
             }
         }
-    
-        #button{
-            display:block;
+
+        #button {
+            display: block;
             margin-top: 0;
             margin-bottom: 0;
-         }
+        }
     }
 
-    
+
 }
-    .arrow{
-        margin-top: -7%;
-        position: absolute;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        align-self: center;
-        .right-arrow{
-            position: absolute;
-            display: block;
-            right: 0;
-          
-        }
-        .left-arrow{
-            position:absolute;
-            display: block;
-            left: -45px;
-        }
-    }
 
-.container1{
+.arrow{
+    position: absolute;
+    z-index: 2;
+    display: block;
+    border: none;
+    background-color: transparent;
+    align-self: center;
+    &.right{
+        right: -60px;
+    }
+    
+    &.left {
+        left: -45px;
+    }
+}
+
+// }
+
+.container1 {
     display: flex;
     flex-direction: row;
     align-self: flex-end;
     justify-content: center;
-    gap:30px;
+    gap: 30px;
     flex-wrap: wrap;
     width: auto;
-    
+
 }
-.main-collection{
+
+.main-collection {
     padding-top: 120px;
     padding-bottom: 123px;
     background-color: #FFF;
@@ -274,22 +344,23 @@ flex-direction: row;
         z-index: 1;
     }
 
-    .table{
+    .table {
         padding: 0 200px;
     }
-    .grid-blocks{
+
+    .grid-blocks {
         display: grid;
         grid-template-areas: "a b c" "a d e" "f g e";
-        justify-content: center; 
+        justify-content: center;
         gap: 30px;
         grid-template-columns: (34% 33% 33%);
         width: 100%;
         padding: 0 15px;
-    
-        .block{
+
+        .block {
             background-color: rgba(246, 246, 246, 1);
 
-            img{
+            img {
                 display: block;
                 left: 0;
                 right: 0;
@@ -304,7 +375,8 @@ flex-direction: row;
         }
     }
 }
-.base-cat{
+
+.base-cat {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -315,123 +387,146 @@ flex-direction: row;
     border-radius: 0px 0px 10px 10px;
     background-color: rgba(255, 255, 255, 0.50);
     backdrop-filter: blur(25px);
-    #main{
+
+    #main {
         padding-left: 30px;
         color: #22271C;
         font-size: 20px;
     }
-    #additional{
+
+    #additional {
         color: #588535;
         font-size: 16px;
         padding-right: 30px;
     }
-    span{
+
+    span {
         display: block;
     }
 }
-.base{
+
+.base {
     display: flex;
     flex-direction: column;
     background-color: #FFF;
 
-    #p1{ margin-top: 123px;
+    #p1 {
+        margin-top: 123px;
         justify-content: center;
         display: flex;
         font-size: 40px;
         font-weight: 700;
-        }
-    #p2{
+    }
+
+    #p2 {
         display: flex;
         justify-content: center;
         color: #777A73;
         font-size: 16px;
         font-weight: 400;
         margin-bottom: 50px;
-        br{
+
+        br {
             display: none;
         }
-        }
+    }
 }
 
-#fon{
-            display: block;
-            margin-right: auto;
-            margin-left: auto;
-            width: 100%;
-            position: relative;
-            
+#fon {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    position: relative;
+
 }
-#bl{
+
+#bl {
     position: absolute;
     width: 100%;
     z-index: 2;
 }
-#text-on-fon{
+
+#text-on-fon {
     padding: 100px 200px 100px 200px;
     position: absolute;
     width: 100%;
-    z-index: 3; 
+    z-index: 3;
 }
-.plant-care{
+
+.plant-care {
     background-color: #F6F6F6;
     height: 504px;
     position: relative;
-    
-        .info-card{
-            display: flex;
-            justify-content: space-around;
-            position: absolute;
-            padding-top:224px;
-            padding-left: 10.42%;
-            padding-right: 10.42%;
-            z-index: 3;
-            width: 100%;
-            gap: 30px;
-            #card{
-                width: 487px;
-                height: 160px;
-                border-radius: 10px;
-                background-color: #FFF;
-                box-shadow: 5px 10px 30px 0px rgba(22, 0, 86, 0.06);
-            }
+
+    .info-card {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        padding-top: 224px;
+        padding-left: 10.42%;
+        padding-right: 10.42%;
+        z-index: 3;
+        width: 100%;
+        gap: 30px;
+
+        #card {
+            width: 487px;
+            height: 160px;
+            border-radius: 10px;
+            background-color: #FFF;
+            box-shadow: 5px 10px 30px 0px rgba(22, 0, 86, 0.06);
         }
     }
+}
 
 .a {
-    grid-area:a;
+    grid-area: a;
     position: relative;
-    padding-top: 152.11%;    
+    padding-top: 152.11%;
     width: 100%;
 }
+
 .b {
-    grid-area:b;
+    grid-area: b;
     position: relative;
 
-}.c {
-    grid-area:c;
+}
+
+.c {
+    grid-area: c;
     position: relative;
 
-}.d {
-    grid-area:d;
+}
+
+.d {
+    grid-area: d;
     position: relative;
-}.e{
-    grid-area:e;
+}
+
+.e {
+    grid-area: e;
     position: relative;
     padding-top: 157.17%;
-   width: 100%;
+    width: 100%;
 }
+
 .f {
-    grid-area:f;
+    grid-area: f;
     position: relative;
 
-}.g {
-    grid-area:g;
+}
+
+.g {
+    grid-area: g;
     position: relative;
 }
-.future-goods{
+
+.future-goods {
     background-color: #FFF;
 }
-.view-all-button{
+
+.view-all-button {
     display: flex;
     width: 182px;
     height: 60px;
@@ -441,7 +536,7 @@ flex-direction: row;
     font-weight: 500;
     border-radius: 8px 0 8px 0;
     border-color: #588535;
-    background-color:  #FFF;
+    background-color: #FFF;
     border-width: 3px;
     display: block;
     margin-right: auto;
@@ -449,7 +544,7 @@ flex-direction: row;
     margin-top: 50px;
 }
 
-#container-with-future-goods{
+#container-with-future-goods {
     background-color: #FFF;
     margin: 129px 0 100px 0;
     padding-left: 110px;
@@ -457,31 +552,36 @@ flex-direction: row;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
     gap: 30px;
-    
+
     .fut-plant-in-line:hover {
         border-color: #588535;
-        .nested-field{
+
+        .nested-field {
             background-color: #588535;
-            .price{
+
+            .price {
                 color: #FFF;
             }
         }
-        .button-cart{
+
+        .button-cart {
             fill: #FFF;
             stroke-width: 1px;
             stroke: #6C944E;
             background-color: #E5E5E5;
         }
-        .flower-name{
+
+        .flower-name {
             color: #FFF;
         }
     }
-    .fut-plant-in-line{
+
+    .fut-plant-in-line {
         display: flex;
         align-self: flex-end;
-        align-items:flex-end;
+        align-items: flex-end;
         flex-wrap: wrap;
         width: 357.5px;
         height: 459px;
@@ -490,54 +590,58 @@ flex-direction: row;
         background-color: #FFF;
         max-width: 100%;
         max-height: 100%;
-        
-        #plants{
+
+        #plants {
             margin-top: 44px;
             margin-bottom: 45px;
             margin-left: auto;
             margin-right: auto;
         }
-        .nested-field{
+
+        .nested-field {
             display: grid;
             grid-template-columns: (1fr 1fr);
             justify-content: flex-end;
-            align-content:space-between;
+            align-content: space-between;
             padding: 30px;
             height: 160px;
             width: 100%;
             border: 1px solid rgba(125, 158, 100, 0.1);
             background-color: #E5E5E5;
             border-radius: 0px 0px 10px 10px;
-           
-            .price{
+
+            .price {
                 color: #22271C;
-                text-align:right;
+                text-align: right;
                 font-family: $main-font;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 700;
-                line-height: 30px; 
+                line-height: 30px;
             }
-            .stars{
+
+            .stars {
                 display: flex;
                 right: 0;
                 width: 100%;
-                align-items:center;
-                justify-content:flex-end;
+                align-items: center;
+                justify-content: flex-end;
             }
         }
-        .button-cart{
+
+        .button-cart {
             color: #588535;
             border-color: #588535;
             text-align: center;
             font-size: 14px;
             font-weight: 400;
-            line-height: 30px; 
+            line-height: 30px;
             border-radius: 5px 0 5px 0;
             width: 130px;
             height: 40px;
         }
-        .flower-name{
+
+        .flower-name {
             color: #22271C;
             font-family: $main-font;
             font-size: 20px;
@@ -547,454 +651,532 @@ flex-direction: row;
         }
     }
 }
-#dots{
+
+#dots {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: -3px;
 }
-#content-block{
+
+#content-block {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center; 
+    justify-content: center;
     margin: 0 200px;
     gap: 30px;
-    .form-block{
+
+    .form-block {
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
         background-color: #F6F6F6;
         width: 100%;
-        &.left{
+
+        &.left {
             clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
         }
-        &.center{
+
+        &.center {
             position: relative;
 
         }
-        &.right{
+
+        &.right {
             clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
-           
+
         }
-        img{
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 30.3%;
-        padding-right: 30.3%;
-        height: auto;
-        width: 100%;
-       
-    }
-    .button-bio{
-        position: absolute;
-        padding: 15px 52px 15px 44px;
-        width: 200px;
-        height: 60px;
-        border-radius: 10px 0px;
-        background-color: #588535;
-        color: #FFF;
-        font-size: 20px;
-        font-weight: 500;
-        bottom: 30px;
-    }
-    .correction{
-        position: relative;
-        right: 8.21%;
+
+        img {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 30.3%;
+            padding-right: 30.3%;
+            height: auto;
+            width: 100%;
+
+        }
+
+        .button-bio {
+            position: absolute;
+            padding: 15px 52px 15px 44px;
+            width: 200px;
+            height: 60px;
+            border-radius: 10px 0px;
+            background-color: #588535;
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 500;
+            bottom: 30px;
+        }
+
+        .correction {
+            position: relative;
+            right: 8.21%;
+        }
+
     }
 
 }
 
-}
 
 
-
-@media  (min-width:851px) {
-    .mobile-only { display:none !important;
+@media (min-width:851px) {
+    .mobile-only {
+        display: none !important;
     }
 }
 
-@media  (max-width:850px) 
-{
-    .desktop-only { display:none !important;
+@media (max-width:850px) {
+    .desktop-only {
+        display: none !important;
     }
-    #top{
+
+    #top {
         padding: 50px 50px 0 50px;
     }
-    #front-div{
+
+    #front-div {
         flex-direction: column;
-        }
+    }
+
     .head-text {
-            padding-top: 110px;
-            padding-left: 15px;
-            text-align: center;
-            .pp1{
-                font-size: 12px;
-                font-weight: 600;
-                line-height: 15px;
-            }
-            .pp2{
-                font-size: 50px;
-                font-weight: 500;
-                line-height: 62px;
-                padding-top: 10px;
-                word-spacing: 999px;
-                width: 100%;
-            }
-            .pp3 {
-                font-size: 12px;
-                font-weight: 400;
-                line-height: 20px;
-                text-align: left;
-                width: 300px;
-                padding: 25px 0;
-                text-align: center;
-                width: 100%;
-            }
+        padding-top: 110px;
+        padding-left: 15px;
+        text-align: center;
+
+        .head-ornamental{
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 15px;
         }
-    
-        #top-buttons{
+
+        .head-shop-main {
+            font-size: 50px;
+            font-weight: 500;
+            line-height: 62px;
+            padding-top: 10px;
+            word-spacing: 999px;
             width: 100%;
-            flex-direction: column;
-            .button{
+        }
+
+        .head-description {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+            width: 300px;
+            padding: 25px 0;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    #top-buttons {
+        width: 100%;
+        flex-direction: column;
+
+        .button {
+            width: 145px;
+            height: 40px;
+            font-size: 15px;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            border-radius: 0;
+            margin: 0 auto;
+
+            &.white {
                 width: 145px;
-                height: 40px;
-                font-size: 15px;
+                background-color: #FFFFFF;
+                color: #588535;
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
                 border-radius: 0;
                 margin: 0 auto;
-                    
-                &.white{
-                    width: 145px;
-                    background-color: #FFFFFF;
-                    color: #588535;
-                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-                    border-radius: 0;
-                    margin: 0 auto;
+            }
+        }
+    }
+    .arrow{
+        width: 50px;
+        &.right{
+            right: 7px;
+        }
+        
+        &.left {
+            left: -35px;
+        }
+        img{
+            height: 80px;
+        }
+    }
+    #container-with-goods{
+        margin: 30px 30px 30px 30px;
+        .container-for-plant-in-line{
+            margin: 20px 0 20px 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10px;
+            
+            .plant-in-line {
+                width: 220px;
+                height: 130px;
+                border-radius: 8px;
+                background: #FFF;
+                display: flex;
+                flex-direction: row;
+                align-self: flex-end;
+                max-width: 100%;
+                max-height: 100%;
+                gap: 10px;
+                
+            .image-inline-box {
+                padding: 7px;
+                
+                .plant-photo {
+                    width: 100%;
+                    height: auto;
                 }
             }
-            }
-    
-    #container-with-goods{
-        margin: 20px 0 20px 0;
-        padding-left: 10px;
-        padding-right: 10px;
-        flex-direction: row;
-        justify-content: center;
-        gap: 5px;
-                
-                .plant-in-line{
-                    width: 160px;
-                    height: 90px;
-                    border-radius: 8px;
-                    background: #FFF;
-                    display: flex;
-                    flex-direction: row;
-                    align-self: flex-end;
-                    max-width: 100%;
-                    max-height: 100%; 
-                    gap: 5px;
             
-                    .image-inline-box{
-                        padding: 7px;
-                        .plant-photo{
-                            width: 100%;
-                            height: auto;
-                        }
+            .basic-inf {
+                justify-content: end;
+                position: relative;
+                line-height: 10px;
+                
+                .like {
+                    top: 3px;
+                    right: 3px;
+                    
+                    .heart {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        width: 10%;
                     }
-                    .basic-inf{
-                        justify-content:end;
-                        position: relative;
-                        line-height: 10px;
-                        .like{
-                            top:3px;
-                            right: 3px;
-                            .heart{
-                                position: absolute;
-                                top: 10px;
-                                right: 10px;
-                                width: 10%;
-                            }
-                            .heart-white{
-                                display: none;
-                            }
-                            .heart-green{
-                                display: none;
-                            }
-                        }
-                        .like:active{
-                            top:3px;
-                            right: 3px;
-                            .heart{
-                                display: none;
-                            }
-                            .heart-white{
-                                display: none;
-                            }
-                            .heart-green{
-                                position: absolute;
-                                top: 10px;
-                                right: 10px;
-                                width: 10%;
-                            }
-                        }
-                      
-                        #name-of-flo{
-                            padding: 10px 0 4px 0;
-                            font-size: 8px;
-                        }
-                        .inf-about-flo{
-                            font-size: 7px;
-                            font-weight: 400;
-                        }
-                        .price{
-                            font-size: 8px;
-                        }
+                    
+                    .heart-white {
+                        display: none;
                     }
-                    #button {
-                        width: 75px;
-                        height: 18px;
-                        border-radius: 2px;
-                        font-size: 7px;
+
+                    .heart-green {
                         display: none;
                     }
                 }
-                .plant-in-line:hover {
-                    height: 130px;
-                    .basic-inf{
 
-                        .like{
-                            top:3px;
-                            right: 3px;
-                            .heart{
-                                position: absolute;
-                                top: 10px;
-                                right: 10px;
-                                width: 10%;
-                            }
-                            .heart-white{
-                                display: none;
-                            }
-                            .heart-green{
-                                display: none;
-                            }
-                        }
-                        .like:active{
-                            .heart{
-                                display: none;
-                            }
-                            .heart-green{
-                                display: none;
-                            }
-                            .heart-white{
-                                display:block;
-                                position: absolute;
-                                right: 5px;
-                                top:5px;
-                                width: 10%;
-                            }
-            
-                        }
-
-                        #name-of-flo{
-                            font-size: 9px;
-                            padding: 10px 0 4px 0;
-                        }
-                        .inf-about-flo{
-                            font-size: 8px;
-                        }
-                        .price{
-                            font-size: 10px;
-                        }
-                        br{
-                            display:block;
-                        }
+                .like:active {
+                    top: 3px;
+                    right: 3px;
+                    
+                    .heart {
+                        display: none;
                     }
-                    #button{
-                        display:block;
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        left: 0;
-                     }
+                    
+                    .heart-white {
+                        display: none;
+                    }
+                    
+                    .heart-green {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        width: 10%;
+                    }
                 }
                 
-            }
-            .container1{
-                gap:5px;
+                #name-of-flo {
+                    padding: 10px 0 4px 0;
+                    font-size: 8px;
+                }
                 
+                .inf-about-flo {
+                    font-size: 7px;
+                    font-weight: 400;
+                }
+                
+                .price {
+                    font-size: 8px;
+                }
             }
-    .main-collection{
+            
+            #button {
+                width: 75px;
+                height: 18px;
+                border-radius: 2px;
+                font-size: 7px;
+                display: none;
+            }
+        }
+        
+        .plant-in-line:hover {
+            height: 130px;
+
+            .basic-inf {
+                
+                .like {
+                    top: 3px;
+                    right: 3px;
+                    
+                    .heart {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        width: 10%;
+                    }
+                    
+                    .heart-white {
+                        display: none;
+                    }
+                    
+                    .heart-green {
+                        display: none;
+                    }
+                }
+
+                .like:active {
+                    .heart {
+                        display: none;
+                    }
+
+                    .heart-green {
+                        display: none;
+                    }
+                    
+                    .heart-white {
+                        display: block;
+                        position: absolute;
+                        right: 5px;
+                        top: 5px;
+                        width: 10%;
+                    }
+                    
+                }
+                
+                #name-of-flo {
+                    font-size: 9px;
+                    padding: 10px 0 4px 0;
+                }
+                
+                .inf-about-flo {
+                    font-size: 8px;
+                }
+                
+                .price {
+                    font-size: 10px;
+                }
+                
+                br {
+                    display: block;
+                }
+            }
+            
+            #button {
+                display: block;
+                margin-top: 0;
+                margin-bottom: 0;
+                left: 0;
+            }
+        }
+        
+    }
+}
+    
+    .container1 {
+        gap: 5px;
+        
+    }
+    
+    .main-collection {
         padding-top: 30px;
         padding-bottom: 30px;
     }
 
-    .base{
+    .base {
         flex-direction: column;
-    
-        #p1{ margin-top: 30px;
+
+        #p1 {
+            margin-top: 30px;
             font-size: 15px;
-            }
-        #p2{
+        }
+
+        #p2 {
             font-size: 12px;
             margin-bottom: 20px;
-            br{
+
+            br {
                 display: none;
             }
-            }
+        }
     }
 
-    
-.main-collection{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    .img {
-        padding: 0 10px;
-        top: 3%;
-        bottom: 0;
-    }
 
-    .table{
-        padding: 0 15px;
-    }
-    .grid-blocks{
-        gap: 5px;
-        padding: 0 10px;
-    
-    }
-}
-.base-cat{
-    height: 30px;
-    backdrop-filter: blur(25px);
-    #main{
-        padding-left: 5px;
-        font-size: 10px;
-    }
-    #additional{
-        font-size: 6px;
-        padding-right: 5px;
-    }
-}
+    .main-collection {
+        padding-top: 30px;
+        padding-bottom: 30px;
 
-.view-all-button{
-    width: 100px;
-    height: 30px;
-    font-size: 15px;
-    border-radius: 3px 0 3px 0;
-    border-width: 1px;
-    margin-top: 20px;
-}
+        .img {
+            padding: 0 10px;
+            top: 3%;
+            bottom: 0;
+        }
 
+        .table {
+            padding: 0 15px;
+        }
 
-#container-with-future-goods{
-    margin: 30px 0 20px 0;
-    padding-left: 10px;
-    padding-right: 10px;
-    justify-content:center;
-    gap: 10px;
-    
-    .fut-plant-in-line{
-        width: 90px;
-        height: 115px;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        
-        #plants{
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 5%;
-            margin-bottom: auto;
-            width: 30%;
-            height: auto;
+        .grid-blocks {
+            gap: 5px;
+            padding: 0 10px;
 
         }
-        .nested-field{
-            padding: 7px;
-            height: 50px;
-            width: 100%;
-            border-radius: 0px 0px 3px 3px;
-            align-content: center;
-            justify-content: center;
-            grid-template-columns: 1fr;
-           
-            .price{
+    }
+
+    .base-cat {
+        height: 30px;
+        backdrop-filter: blur(25px);
+
+        #main {
+            padding-left: 5px;
+            font-size: 10px;
+        }
+
+        #additional {
+            font-size: 6px;
+            padding-right: 5px;
+        }
+    }
+
+    .view-all-button {
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+        border-radius: 3px 0 3px 0;
+        border-width: 1px;
+        margin-top: 20px;
+    }
+
+
+    #container-with-future-goods {
+        margin: 30px 0 20px 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: center;
+        gap: 10px;
+
+        .fut-plant-in-line {
+            width: 90px;
+            height: 115px;
+            flex-wrap: nowrap;
+            flex-direction: column;
+
+            #plants {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5%;
+                margin-bottom: auto;
+                width: 30%;
+                height: auto;
+
+            }
+
+            .nested-field {
+                padding: 7px;
+                height: 50px;
+                width: 100%;
+                border-radius: 0px 0px 3px 3px;
+                align-content: center;
+                justify-content: center;
+                grid-template-columns: 1fr;
+
+                .price {
+                    font-size: 7px;
+                    text-align: center;
+                    line-height: normal;
+                }
+
+                .stars {
+                    display: none;
+                }
+            }
+
+            .button-cart {
+                font-size: 7px;
+                width: 70px;
+                height: 15px;
+                line-height: normal;
+                text-align: center;
+                border-width: 1px;
+
+            }
+
+            .flower-name {
                 font-size: 7px;
                 text-align: center;
+            }
+        }
+    }
+
+    #dots {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        width: 10%;
+        height: auto;
+    }
+
+    #content-block {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        margin: 0 20px;
+        gap: 5px;
+
+        .form-block {
+
+            border-radius: 3px;
+
+            &.left {
+                clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+            }
+
+            &.center {
+                position: relative;
+            }
+
+            &.right {
+                clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+
+            }
+
+            img {
+                padding-top: 3px;
+                padding-bottom: 3px;
+                padding-left: 30.3%;
+                padding-right: 30.3%;
+                height: auto;
+                width: 100%;
+
+            }
+
+            .button-bio {
+                position: absolute;
+                padding: 0 3px 5px 5px;
+                width: 80px;
+                height: 20px;
+                border-radius: 3px 0px;
+                font-size: 12px;
+                bottom: 3px;
                 line-height: normal;
             }
-            .stars{
-                display: none;
+
+            .correction {
+                position: relative;
+                right: 8.21%;
             }
-        }
-        .button-cart{
-            font-size:7px;
-            width: 70px;
-            height: 15px;
-            line-height: normal;
-            text-align: center;
-            border-width: 1px;
 
-        }
-        .flower-name{
-            font-size: 7px;
-            text-align: center;
         }
     }
-}
-
-#dots{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    width: 10%;
-    height: auto;
-}
-
-#content-block{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center; 
-    margin: 0 20px;
-    gap: 5px;
-    .form-block{
-
-        border-radius: 3px;
-        &.left{
-            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
-        }
-        &.center{
-            position: relative;
-        }
-        &.right{
-            clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
-           
-        }
-        img{
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 30.3%;
-        padding-right: 30.3%;
-        height: auto;
-        width: 100%;
-       
-    }
-    .button-bio{
-        position: absolute;
-        padding: 0 3px 5px 5px;
-        width: 80px;
-        height: 20px;
-        border-radius: 3px 0px;
-        font-size: 12px;
-        bottom: 3px;
-        line-height: normal;
-    }
-    .correction{
-        position: relative;
-        right: 8.21%;
-    }
-
-}
-}
 
 }

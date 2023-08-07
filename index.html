@@ -1,592 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Flower main page</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-<header>
-    <div id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower main page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <!-- <div id="top"> -->
         <img class="logo" src="./assets/Снимок экрана 2022-04-20 011305.png" alt="Logo">
         <nav>
             <a class="nav-link" id="nav-home" href="index.html">Home</a>
-            <a class="nav-link"href="#">About Us</a>
-            <a class="nav-link"href="#">Products</a>
-            <a class="nav-link"href="#">News</a>
-            <a class="nav-link gap"href="#">Contact Us</a>
+            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#">Products</a>
+            <a class="nav-link" href="#">News</a>
+            <a class="nav-link gap" href="#">Contact Us</a>
             <a href="#"> <img class="register" src="./assets/Group 4.png"></a>
         </nav>
         <button class="mobile-only mob-icon"><img class="mob-pic" src="./assets/nav-mob.png"> </button>
-    </div>
-</header>
-<section id="front-div" >
-    <div class="head-text">
-        <p1 class="pp1">#Ornamental Plant</p1>
-        <p1 class="pp2" >Various Indoor Plant Shop</p1>
-        <p1 class="pp3" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p1>
-        <div id="top-buttons">
-            <a class="button" href="#">Add To Cart</a>
-            <a class="button white" href="#">Learn More</a>
+        <!-- </div> -->
+    </header>
+    <section id="front-div">
+        <div class="head-text">
+            <p class="head-ornamental">#ORNAMENTAL PLANT</p>
+            <p class="head-shop-main">Various Indoor Plant Shop</p>
+            <p class="head-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been.</p>
+            <div id="top-buttons">
+                <a class="button" href="#">Add To Cart</a>
+                <a class="button white" href="#">Learn More</a>
+            </div>
         </div>
-    </div>
 
         <img class="background-flower desktop-only" src="./assets/Group 26118.png" alt="background-flower">
 
-</section>
+    </section>
 
-<section id="container-with-goods">
-    <!-- <div class="container1"> -->
-        <div class="add-cont">
-            <div class="arrow">
-                <img class="left-arrow" onclick="leafSlide(-1)" src="./assets/Group26118_1.png">
-                <img class="right-arrow"  onclick="leafSlide(1)"src="./assets/Group26118_2.png">
-            </div>
-        </div>   
-        
-        <div class="plant-in-line">
-            <div class="image-inline-box">
-                <img class="plant-photo" src="./assets/severin-candrian-EASjBRt6gi0-unsplash 1.png">
-            </div>
-            <div class="basic-inf">
-                <div class="like">
-                    <img class="heart" src="./assets/heart.png">
-                    <img class="heart-white" src="./assets/heart-white.png">
-                    <img class="heart-green" src="./assets/heart-green.png">
+    <section id="container-with-goods">
+        <!-- <div class="container1"> -->
+        <button class="left arrow" onclick="leafSlide(-1)"><img src="./assets/Group26118_1.png"></button>
+        <button class="right arrow" onclick="leafSlide(1)"> <img src="./assets/Group26118_2.png"></button>
+        <br>
+        <section class="container-for-plant-in-line">
+
+            <div class="plant-in-line">
+                <div class="image-inline-box">
+                    <img class="plant-photo" src="./assets/severin-candrian-EASjBRt6gi0-unsplash 1.png">
                 </div>
-                <p id="name-of-flo">Severin Candrian</p>
-                <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
-                <span class="price">$59.99</span><br>
-                <button id="button">Add To Cart</button>
-            </div>
-        </div>
-        
-        <div class="plant-in-line">
-            <div class="image-inline-box">
-                <img class="plant-photo" src="./assets/image 14.png">
-            </div>
-            <div class="basic-inf">
-                <div class="like">
-                    <img class="heart" src="./assets/heart.png">
-                    <img class="heart-white" src="./assets/heart-white.png">
-                    <img class="heart-green" src="./assets/heart-green.png">
-                </div>
-                <p id="name-of-flo">Bonsai Bot</p> 
-                <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
-                <span class="price">$59.99</span>
-                <button id="button">Add To Cart</button>
-            </div>
-
-            
-        </div>
-    <!-- </div> -->
-        
-    <!-- <div class="container1">    -->
-    <div class="plant-in-line">
-        <div class="image-inline-box">
-            <img class="plant-photo" src="./assets/photo-1501004318641-b39e6451bec6 2.png">
-        </div>
-        <div class="basic-inf">
-            <div class="like">
-                <img class="heart" src="./assets/heart.png">
-                <img class="heart-white" src="./assets/heart-white.png">
-                <img class="heart-green" src="./assets/heart-green.png">
-            </div>
-            <p id="name-of-flo">Severin Candrian</p>
-            <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
-            <span class="price">$59.99</span>
-            <button id="button">Add To Cart</button>
-    </div>
-    </div>
-
-<div class="plant-in-line">
-    <div  class="image-inline-box">
-        <img class="plant-photo"src="./assets/photo-1485955900006-10f4d324d411 3.png">
-    </div>
-    <div class="basic-inf"> 
-        <div class="like">
-            <img class="heart" src="./assets/heart.png">
-            <img class="heart-white" src="./assets/heart-white.png">
-            <img class="heart-green" src="./assets/heart-green.png">
-        </div>
-        <p id="name-of-flo">Hybrid Caktus</p>
-        <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
-        <span class="price">$59.99</span>
-        <button id="button">Add To Cart</button>
-    </div>
-</div>
-</div>
-<!-- </div> -->
-
-
-        <div class="plant-in-line">
-            <div class="image-inline-box">
-                <img class="plant-photo" src="./assets/severin-candrian-EASjBRt6gi0-unsplash 1.png">
-            </div>
-            <div class="basic-inf">
-                <div class="like">
-                    <img class="heart" src="./assets/heart.png">
-                    <img class="heart-white" src="./assets/heart-white.png">
-                    <img class="heart-green" src="./assets/heart-green.png">
-                </div>
-                <p id="name-of-flo">Severin Candrian</p>
-                <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
-                <span class="price">$59.99</span><br>
-                <button id="button">Add To Cart</button>
-            </div>
-        </div>
-        
-        <div class="plant-in-line">
-            <div class="image-inline-box">
-                <img class="plant-photo" src="./assets/image 14.png">
-            </div>
-            <div class="basic-inf">
-                <div class="like">
-                    <img class="heart" src="./assets/heart.png">
-                    <img class="heart-white" src="./assets/heart-white.png">
-                    <img class="heart-green" src="./assets/heart-green.png">
-                </div>
-                <p id="name-of-flo">Bonsai Bot</p> 
-                <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
-                <span class="price">$59.99</span>
-                <button id="button">Add To Cart</button>
-            </div>
-
-            
-        </div>
-    <!-- </div> -->
-        
-    <!-- <div class="container1">    -->
-    <div class="plant-in-line">
-        <div class="image-inline-box">
-            <img class="plant-photo" src="./assets/photo-1501004318641-b39e6451bec6 2.png">
-        </div>
-        <div class="basic-inf">
-            <div class="like">
-                <img class="heart" src="./assets/heart.png">
-                <img class="heart-white" src="./assets/heart-white.png">
-                <img class="heart-green" src="./assets/heart-green.png">
-            </div>
-            <p id="name-of-flo">Severin Candrian</p>
-            <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
-            <span class="price">$59.99</span>
-            <button id="button">Add To Cart</button>
-    </div>
-    </div>
-
-<div class="plant-in-line">
-    <div  class="image-inline-box">
-        <img class="plant-photo"src="./assets/photo-1485955900006-10f4d324d411 3.png">
-    </div>
-    <div class="basic-inf"> 
-        <div class="like">
-            <img class="heart" src="./assets/heart.png">
-            <img class="heart-white" src="./assets/heart-white.png">
-            <img class="heart-green" src="./assets/heart-green.png">
-        </div>
-        <p id="name-of-flo">Hybrid Caktus</p>
-        <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
-        <span class="price">$59.99</span>
-        <button id="button">Add To Cart</button>
-    </div>
-</div>
-</div>
-<!-- //////////////// -->
-
-<div class="plant-in-line">
-    <div class="image-inline-box">
-        <img class="plant-photo" src="./assets/severin-candrian-EASjBRt6gi0-unsplash 1.png">
-    </div>
-    <div class="basic-inf">
-        <div class="like">
-            <img class="heart" src="./assets/heart.png">
-            <img class="heart-white" src="./assets/heart-white.png">
-            <img class="heart-green" src="./assets/heart-green.png">
-        </div>
-        <p id="name-of-flo">Severin Candrian</p>
-        <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
-        <span class="price">$59.99</span><br>
-        <button id="button">Add To Cart</button>
-    </div>
-</div>
-
-<div class="plant-in-line">
-    <div class="image-inline-box">
-        <img class="plant-photo" src="./assets/image 14.png">
-    </div>
-    <div class="basic-inf">
-        <div class="like">
-            <img class="heart" src="./assets/heart.png">
-            <img class="heart-white" src="./assets/heart-white.png">
-            <img class="heart-green" src="./assets/heart-green.png">
-        </div>
-        <p id="name-of-flo">Bonsai Bot</p> 
-        <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
-        <span class="price">$59.99</span>
-        <button id="button">Add To Cart</button>
-    </div>
-
-    
-</div>
-<!-- </div> -->
-
-<!-- <div class="container1">    -->
-<div class="plant-in-line">
-<div class="image-inline-box">
-    <img class="plant-photo" src="./assets/photo-1501004318641-b39e6451bec6 2.png">
-</div>
-<div class="basic-inf">
-    <div class="like">
-        <img class="heart" src="./assets/heart.png">
-        <img class="heart-white" src="./assets/heart-white.png">
-        <img class="heart-green" src="./assets/heart-green.png">
-    </div>
-    <p id="name-of-flo">Severin Candrian</p>
-    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
-    <span class="price">$59.99</span>
-    <button id="button">Add To Cart</button>
-</div>
-</div>
-
-<div class="plant-in-line">
-<div  class="image-inline-box">
-<img class="plant-photo"src="./assets/photo-1485955900006-10f4d324d411 3.png">
-</div>
-<div class="basic-inf"> 
-<div class="like">
-    <img class="heart" src="./assets/heart.png">
-    <img class="heart-white" src="./assets/heart-white.png">
-    <img class="heart-green" src="./assets/heart-green.png">
-</div>
-<p id="name-of-flo">Hybrid Caktus</p>
-<span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
-<span class="price">$59.99</span>
-<button id="button">Add To Cart</button>
-</div>
-</div>
-</div>
-<!-- </div> -->
-
-
-<div class="plant-in-line">
-    <div class="image-inline-box">
-        <img class="plant-photo" src="./assets/severin-candrian-EASjBRt6gi0-unsplash 1.png">
-    </div>
-    <div class="basic-inf">
-        <div class="like">
-            <img class="heart" src="./assets/heart.png">
-            <img class="heart-white" src="./assets/heart-white.png">
-            <img class="heart-green" src="./assets/heart-green.png">
-        </div>
-        <p id="name-of-flo">Severin Candrian</p>
-        <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
-        <span class="price">$59.99</span><br>
-        <button id="button">Add To Cart</button>
-    </div>
-</div>
-
-<div class="plant-in-line">
-    <div class="image-inline-box">
-        <img class="plant-photo" src="./assets/image 14.png">
-    </div>
-    <div class="basic-inf">
-        <div class="like">
-            <img class="heart" src="./assets/heart.png">
-            <img class="heart-white" src="./assets/heart-white.png">
-            <img class="heart-green" src="./assets/heart-green.png">
-        </div>
-        <p id="name-of-flo">Bonsai Bot</p> 
-        <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
-        <span class="price">$59.99</span>
-        <button id="button">Add To Cart</button>
-    </div>
-
-    
-</div>
-<!-- </div> -->
-
-<!-- <div class="container1">    -->
-<div class="plant-in-line">
-<div class="image-inline-box">
-    <img class="plant-photo" src="./assets/photo-1501004318641-b39e6451bec6 2.png">
-</div>
-<div class="basic-inf">
-    <div class="like">
-        <img class="heart" src="./assets/heart.png">
-        <img class="heart-white" src="./assets/heart-white.png">
-        <img class="heart-green" src="./assets/heart-green.png">
-    </div>
-    <p id="name-of-flo">Severin Candrian</p>
-    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
-    <span class="price">$59.99</span>
-    <button id="button">Add To Cart</button>
-</div>
-</div>
-
-<div class="plant-in-line">
-<div  class="image-inline-box">
-<img class="plant-photo"src="./assets/photo-1485955900006-10f4d324d411 3.png">
-</div>
-<div class="basic-inf"> 
-<div class="like">
-    <img class="heart" src="./assets/heart.png">
-    <img class="heart-white" src="./assets/heart-white.png">
-    <img class="heart-green" src="./assets/heart-green.png">
-</div>
-<p id="name-of-flo">Hybrid Caktus</p>
-<span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
-<span class="price">$59.99</span>
-<button id="button">Add To Cart</button>
-</div>
-</div>
-</div>
-
-</section>
-</section>
-
-<section class="main-collection">
-    <img class="img desktop-only" src="./assets/Group26083.png">
-    <div class="base">
-        <p id="p1">Plant Collection</p>
-        <p id="p2">Smoothlu And healthy plant fore you and all people</p>
-    </div>
-    
-    <div class="table">
-        <div class="grid-blocks">
-            <div class="block a">
-                <img src="./assets/peace-lily-plant-white-pot-removebg-preview.png">
-                <div class="base-cat">
-                <span id="main">Pet Friendly</span> 
-                <span id="additional">16 Items</span>
-                </div>
-            </div>  
-        
-            <div class="block b">
-                <img src="./assets/colour-flowers-white-pot-isolated-white-removebg-preview 1.png">
-                <div class="base-cat">
-                <span id="main">Outdoor</span> 
-                <span id="additional">30 Items</span>
-            </div>
-            </div>   
-        
-            <div class="block c">
-            <img src="./assets/golden-pothos-epipremnum-aureum-white-table-living-room-home-garden-removebg-preview 1.png">
-            <div class="base-cat">
-                <span id="main">Outdoor</span> 
-                <span id="additional">18 Items</span>
-            </div>
-            </div>   
-        
-            <div class="block d">
-            <img src="./assets/galina-n-miziNqvJx5M-unsplash-removebg-preview 1.png">
-            <div class="base-cat">
-                <span id="main">Pet Friendly</span> 
-                <span id="additional">29 Items</span>
-            </div>
-            </div>   
-    
-            <div class="block e">
-            <img src="./assets/natalia-y-Qin3ErJoMdA-unsplash-removebg-preview 1.png">
-            <div class="base-cat">
-                <span id="main">Indoor</span> 
-                <span id="additional">25 Items</span>
-            </div>
-            </div>   
-    
-            <div class="block f">
-            <img src="./assets/succulent-plant-gardening-flower-plant-bde7abad6a7b32b417de7d1d54ad87ce.png">
-            <div class="base-cat">
-                <span id="main">Indoor</span> 
-                <span id="additional">17 Items</span>
-            </div>
-            </div>   
-    
-            <div class="block g">        
-            <img src="./assets/annie-spratt-fbAnIjhrOL4-unsplash-removebg-preview 1.png">
-            <div class="base-cat">
-                <span id="main">Office Collection</span> 
-                <span id="additional">28 Items</span>
-            </div>   
-            </div>   
-        </div>
-        <button class="view-all-button">View All</button>
-    </div>
-</section>
-<section class="plant-care desktop-only">
-    <img  id="text-on-fon" src="/assets/Group26118.png">
-    <img  id="bl" src="./assets/Rectangle2052.png">
-    <img  id="fon" src="./assets/liubov-ilchuk-_6rR_iP06p4-unsplash 1.png">
-</section>
-<section class="future-goods">
-    <div class="base">
-        <p id="p1">Featured Products</p>
-        <p id="p2">Smoothlu And healthy plant fore you and all people</p>
-    </div>
-    <div id="container-with-future-goods">
-        <div class="container1">
-            <div class="fut-plant-in-line">
-                <img id="plants" src="./assets/future-flowers/stephanie-harvey-f7PfM2NklZ4-unsplash-removebg-preview.png">
-                <div class="nested-field picked">
-                    <span class="flower-name picked">Combo Nisi</span>
-                    <span class="price">$79.99</span>
-                <button class="button-cart">Add To Cart</button>
-                <div class="stars">
-                    <img src="./assets/Star12.png">
-                    <img src="./assets/Star12.png">
-                    <img src="./assets/Star12.png">
-                    <img src="./assets/Star12.png">
-                    <img src="./assets/Star12.png">
-                 </div>
-                </div>
-            </div>
-            
-            <div class="fut-plant-in-line">
-                <img id="plants" src="./assets/future-flowers/swiss-cheese-plant-houseplant-bamboo-ornamental-potted-plant-8707f2a0f6d71f85f1b4a42e67a325a2.png">
-                <div class="nested-field">
-                    <span class="flower-name">Combo Nisi</span>
-                    <span class="price">$69.99</span>
-                    <button class="button-cart">Add To Cart</button>
-                    <div class="stars">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                     </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="container1">
-            <div class="fut-plant-in-line">
-                <img id="plants" src="./assets/future-flowers/pepper-face-plant-small-pot-removebg-preview.png">
-                <div class="nested-field">
-                    <span class="flower-name">Combo Nisi</span>
-                    <span class="price">$79.99</span>
-                    <button class="button-cart">Add To Cart</button>
-                    <div class="stars">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                     </div>
-                </div>
-            </div>
-            
-            <div class="fut-plant-in-line">
-                <img id="plants" src="./assets/future-flowers/monstera-deliciosa-plant-pot-removebg-preview.png">
-                <div class="nested-field">
-                    <span class="flower-name">Combo Nisi</span>
-                    <span class="price">$79.99</span>
-                    <button class="button-cart">Add To Cart</button>
-                    <div class="stars">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                     </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container1">
-            <div class="fut-plant-in-line">
-                <img id="plants"  src="./assets/future-flowers/stephanie-harvey-T0inbt7nRME-unsplash-removebg-preview 1.png">
-                <div class="nested-field">
-                    <span class="flower-name">Combo Nisi</span>
-                    <span class="price">$79.99</span>
-                    <button class="button-cart">Add To Cart</button>
-                    <div class="stars">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                     </div>
-                </div>
-            </div>
-            
-            <div class="fut-plant-in-line">
-                <img id="plants" src="./assets/future-flowers/linh-le-Ebwp2-6BG8E-unsplash-removebg-preview 1.png">
-                <div class="nested-field">
-                    <span class="flower-name">Combo Nisi</span>
-                    <span class="price">$79.99</span>
-                    <button class="button-cart">Add To Cart</button>
-                    <div class="stars">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                     </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="container1">
-            <div class="fut-plant-in-line">
-                <img id="plants" src="./assets/future-flowers/galina-n-miziNqvJx5M-unsplash-removebg-preview 2.png">
-                <div class="nested-field">
-                    <span class="flower-name">Combo Nisi</span>
-                    <span class="price">$79.99</span>
-                    <button class="button-cart">Add To Cart</button>
-                    <div class="stars">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                     </div>
+                <div class="basic-inf">
+                    <div class="like">
+                        <img class="heart" src="./assets/heart.png">
+                        <img class="heart-white" src="./assets/heart-white.png">
+                        <img class="heart-green" src="./assets/heart-green.png">
+                    </div>
+                    <p id="name-of-flo">Severin Candrian</p>
+                    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
+                    <span class="price">$59.99</span><br>
+                    <button id="button">Add To Cart</button>
                 </div>
             </div>
 
-            <div class="fut-plant-in-line">
-                <img id="plants" src="./assets/future-flowers/stephanie-harvey-wDhLrN9FAAM-unsplash-removebg-preview.png">
-                <div class="nested-field">
-                    <span class="flower-name">Combo Nisi</span>
-                    <span class="price">$79.99</span>
-                    <button class="button-cart">Add To Cart</button>
-                    <div class="stars">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                        <img src="./assets/Star12.png">
-                     </div>
+            <div class="plant-in-line">
+                <div class="image-inline-box">
+                    <img class="plant-photo" src="./assets/image 14.png">
+                </div>
+                <div class="basic-inf">
+                    <div class="like">
+                        <img class="heart" src="./assets/heart.png">
+                        <img class="heart-white" src="./assets/heart-white.png">
+                        <img class="heart-green" src="./assets/heart-green.png">
+                    </div>
+                    <p id="name-of-flo">Bonsai Bot</p>
+                    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
+                    <span class="price">$59.99</span>
+                    <button id="button">Add To Cart</button>
+                </div>
+
+
+            </div>
+            <!-- </div> -->
+
+            <!-- <div class="container1">    -->
+            <div class="plant-in-line">
+                <div class="image-inline-box">
+                    <img class="plant-photo" src="./assets/photo-1501004318641-b39e6451bec6 2.png">
+                </div>
+                <div class="basic-inf">
+                    <div class="like">
+                        <img class="heart" src="./assets/heart.png">
+                        <img class="heart-white" src="./assets/heart-white.png">
+                        <img class="heart-green" src="./assets/heart-green.png">
+                    </div>
+                    <p id="name-of-flo">Severin Candrian</p>
+                    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
+                    <span class="price">$59.99</span>
+                    <button id="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="plant-in-line">
+                <div class="image-inline-box">
+                    <img class="plant-photo" src="./assets/photo-1485955900006-10f4d324d411 3.png">
+                </div>
+                <div class="basic-inf">
+                    <div class="like">
+                        <img class="heart" src="./assets/heart.png">
+                        <img class="heart-white" src="./assets/heart-white.png">
+                        <img class="heart-green" src="./assets/heart-green.png">
+                    </div>
+                    <p id="name-of-flo">Hybrid Caktus</p>
+                    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
+                    <span class="price">$59.99</span>
+                    <button id="button">Add To Cart</button>
+                </div>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+
+
+            <div class="plant-in-line">
+                <div class="image-inline-box">
+                    <img class="plant-photo" src="./assets/severin-candrian-EASjBRt6gi0-unsplash 1.png">
+                </div>
+                <div class="basic-inf">
+                    <div class="like">
+                        <img class="heart" src="./assets/heart.png">
+                        <img class="heart-white" src="./assets/heart-white.png">
+                        <img class="heart-green" src="./assets/heart-green.png">
+                    </div>
+                    <p id="name-of-flo">Severin Candrian</p>
+                    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
+                    <span class="price">$59.99</span><br>
+                    <button id="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="plant-in-line">
+                <div class="image-inline-box">
+                    <img class="plant-photo" src="./assets/image 14.png">
+                </div>
+                <div class="basic-inf">
+                    <div class="like">
+                        <img class="heart" src="./assets/heart.png">
+                        <img class="heart-white" src="./assets/heart-white.png">
+                        <img class="heart-green" src="./assets/heart-green.png">
+                    </div>
+                    <p id="name-of-flo">Bonsai Bot</p>
+                    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
+                    <span class="price">$59.99</span>
+                    <button id="button">Add To Cart</button>
+                </div>
+
+
+            </div>
+            <!-- </div> -->
+
+            <!-- <div class="container1">    -->
+            <div class="plant-in-line">
+                <div class="image-inline-box">
+                    <img class="plant-photo" src="./assets/photo-1501004318641-b39e6451bec6 2.png">
+                </div>
+                <div class="basic-inf">
+                    <div class="like">
+                        <img class="heart" src="./assets/heart.png">
+                        <img class="heart-white" src="./assets/heart-white.png">
+                        <img class="heart-green" src="./assets/heart-green.png">
+                    </div>
+                    <p id="name-of-flo">Severin Candrian</p>
+                    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
+                    <span class="price">$59.99</span>
+                    <button id="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="plant-in-line">
+                <div class="image-inline-box">
+                    <img class="plant-photo" src="./assets/photo-1485955900006-10f4d324d411 3.png">
+                </div>
+                <div class="basic-inf">
+                    <div class="like">
+                        <img class="heart" src="./assets/heart.png">
+                        <img class="heart-white" src="./assets/heart-white.png">
+                        <img class="heart-green" src="./assets/heart-green.png">
+                    </div>
+                    <p id="name-of-flo">Hybrid Caktus</p>
+                    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
+                    <span class="price">$59.99</span>
+                    <button id="button">Add To Cart</button>
+                </div>
+            </div>
+            <!-- </div> -->
+            <!-- //////////////// -->
+
+            <div class="plant-in-line">
+                <div class="image-inline-box">
+                    <img class="plant-photo" src="./assets/severin-candrian-EASjBRt6gi0-unsplash 1.png">
+                </div>
+                <div class="basic-inf">
+                    <div class="like">
+                        <img class="heart" src="./assets/heart.png">
+                        <img class="heart-white" src="./assets/heart-white.png">
+                        <img class="heart-green" src="./assets/heart-green.png">
+                    </div>
+                    <p id="name-of-flo">Severin Candrian</p>
+                    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
+                    <span class="price">$59.99</span><br>
+                    <button id="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="plant-in-line">
+                <div class="image-inline-box">
+                    <img class="plant-photo" src="./assets/image 14.png">
+                </div>
+                <div class="basic-inf">
+                    <div class="like">
+                        <img class="heart" src="./assets/heart.png">
+                        <img class="heart-white" src="./assets/heart-white.png">
+                        <img class="heart-green" src="./assets/heart-green.png">
+                    </div>
+                    <p id="name-of-flo">Bonsai Bot</p>
+                    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
+                    <span class="price">$59.99</span>
+                    <button id="button">Add To Cart</button>
+                </div>
+
+
+            </div>
+            <!-- </div> -->
+
+            <!-- <div class="container1">    -->
+            <div class="plant-in-line">
+                <div class="image-inline-box">
+                    <img class="plant-photo" src="./assets/photo-1501004318641-b39e6451bec6 2.png">
+                </div>
+                <div class="basic-inf">
+                    <div class="like">
+                        <img class="heart" src="./assets/heart.png">
+                        <img class="heart-white" src="./assets/heart-white.png">
+                        <img class="heart-green" src="./assets/heart-green.png">
+                    </div>
+                    <p id="name-of-flo">Severin Candrian</p>
+                    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
+                    <span class="price">$59.99</span>
+                    <button id="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="plant-in-line">
+                <div class="image-inline-box">
+                    <img class="plant-photo" src="./assets/photo-1485955900006-10f4d324d411 3.png">
+                </div>
+                <div class="basic-inf">
+                    <div class="like">
+                        <img class="heart" src="./assets/heart.png">
+                        <img class="heart-white" src="./assets/heart-white.png">
+                        <img class="heart-green" src="./assets/heart-green.png">
+                    </div>
+                    <p id="name-of-flo">Hybrid Caktus</p>
+                    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
+                    <span class="price">$59.99</span>
+                    <button id="button">Add To Cart</button>
+                </div>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+
+
+            <div class="plant-in-line">
+                <div class="image-inline-box">
+                    <img class="plant-photo" src="./assets/severin-candrian-EASjBRt6gi0-unsplash 1.png">
+                </div>
+                <div class="basic-inf">
+                    <div class="like">
+                        <img class="heart" src="./assets/heart.png">
+                        <img class="heart-white" src="./assets/heart-white.png">
+                        <img class="heart-green" src="./assets/heart-green.png">
+                    </div>
+                    <p id="name-of-flo">Severin Candrian</p>
+                    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
+                    <span class="price">$59.99</span><br>
+                    <button id="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="plant-in-line">
+                <div class="image-inline-box">
+                    <img class="plant-photo" src="./assets/image 14.png">
+                </div>
+                <div class="basic-inf">
+                    <div class="like">
+                        <img class="heart" src="./assets/heart.png">
+                        <img class="heart-white" src="./assets/heart-white.png">
+                        <img class="heart-green" src="./assets/heart-green.png">
+                    </div>
+                    <p id="name-of-flo">Bonsai Bot</p>
+                    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
+                    <span class="price">$59.99</span>
+                    <button id="button">Add To Cart</button>
+                </div>
+
+
+            </div>
+            <!-- </div> -->
+
+            <!-- <div class="container1">    -->
+            <div class="plant-in-line">
+                <div class="image-inline-box">
+                    <img class="plant-photo" src="./assets/photo-1501004318641-b39e6451bec6 2.png">
+                </div>
+                <div class="basic-inf">
+                    <div class="like">
+                        <img class="heart" src="./assets/heart.png">
+                        <img class="heart-white" src="./assets/heart-white.png">
+                        <img class="heart-green" src="./assets/heart-green.png">
+                    </div>
+                    <p id="name-of-flo">Severin Candrian</p>
+                    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
+                    <span class="price">$59.99</span>
+                    <button id="button">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="plant-in-line">
+                <div class="image-inline-box">
+                    <img class="plant-photo" src="./assets/photo-1485955900006-10f4d324d411 3.png">
+                </div>
+                <div class="basic-inf">
+                    <div class="like">
+                        <img class="heart" src="./assets/heart.png">
+                        <img class="heart-white" src="./assets/heart-white.png">
+                        <img class="heart-green" src="./assets/heart-green.png">
+                    </div>
+                    <p id="name-of-flo">Hybrid Caktus</p>
+                    <span class="inf-about-flo">Lorem Ipsum is simply dummy text.</span><br>
+                    <span class="price">$59.99</span>
+                    <button id="button">Add To Cart</button>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+
+    </section>
+
+    <section class="main-collection">
+        <img class="img desktop-only" src="./assets/Group26083.png">
+        <div class="base">
+            <p id="p1">Plant Collection</p>
+            <p id="p2">Smoothlu And healthy plant fore you and all people</p>
+        </div>
+
+        <div class="table">
+            <div class="grid-blocks">
+                <div class="block a">
+                    <img src="./assets/peace-lily-plant-white-pot-removebg-preview.png">
+                    <div class="base-cat">
+                        <span id="main">Pet Friendly</span>
+                        <span id="additional">16 Items</span>
+                    </div>
+                </div>
+
+                <div class="block b">
+                    <img src="./assets/colour-flowers-white-pot-isolated-white-removebg-preview 1.png">
+                    <div class="base-cat">
+                        <span id="main">Outdoor</span>
+                        <span id="additional">30 Items</span>
+                    </div>
+                </div>
+
+                <div class="block c">
+                    <img
+                        src="./assets/golden-pothos-epipremnum-aureum-white-table-living-room-home-garden-removebg-preview 1.png">
+                    <div class="base-cat">
+                        <span id="main">Outdoor</span>
+                        <span id="additional">18 Items</span>
+                    </div>
+                </div>
+
+                <div class="block d">
+                    <img src="./assets/galina-n-miziNqvJx5M-unsplash-removebg-preview 1.png">
+                    <div class="base-cat">
+                        <span id="main">Pet Friendly</span>
+                        <span id="additional">29 Items</span>
+                    </div>
+                </div>
+
+                <div class="block e">
+                    <img src="./assets/natalia-y-Qin3ErJoMdA-unsplash-removebg-preview 1.png">
+                    <div class="base-cat">
+                        <span id="main">Indoor</span>
+                        <span id="additional">25 Items</span>
+                    </div>
+                </div>
+
+                <div class="block f">
+                    <img src="./assets/succulent-plant-gardening-flower-plant-bde7abad6a7b32b417de7d1d54ad87ce.png">
+                    <div class="base-cat">
+                        <span id="main">Indoor</span>
+                        <span id="additional">17 Items</span>
+                    </div>
+                </div>
+
+                <div class="block g">
+                    <img src="./assets/annie-spratt-fbAnIjhrOL4-unsplash-removebg-preview 1.png">
+                    <div class="base-cat">
+                        <span id="main">Office Collection</span>
+                        <span id="additional">28 Items</span>
+                    </div>
+                </div>
+            </div>
+            <button class="view-all-button">View All</button>
+        </div>
+    </section>
+    <section class="plant-care desktop-only">
+        <img id="text-on-fon" src="/assets/Group26118.png">
+        <img id="bl" src="./assets/Rectangle2052.png">
+        <img id="fon" src="./assets/liubov-ilchuk-_6rR_iP06p4-unsplash 1.png">
+    </section>
+    <section class="future-goods">
+        <div class="base">
+            <p id="p1">Featured Products</p>
+            <p id="p2">Smoothlu And healthy plant fore you and all people</p>
+        </div>
+        <div id="container-with-future-goods">
+            <div class="container1">
+                <div class="fut-plant-in-line">
+                    <img id="plants"
+                        src="./assets/future-flowers/stephanie-harvey-f7PfM2NklZ4-unsplash-removebg-preview.png">
+                    <div class="nested-field picked">
+                        <span class="flower-name picked">Combo Nisi</span>
+                        <span class="price">$79.99</span>
+                        <button class="button-cart">Add To Cart</button>
+                        <div class="stars">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fut-plant-in-line">
+                    <img id="plants"
+                        src="./assets/future-flowers/swiss-cheese-plant-houseplant-bamboo-ornamental-potted-plant-8707f2a0f6d71f85f1b4a42e67a325a2.png">
+                    <div class="nested-field">
+                        <span class="flower-name">Combo Nisi</span>
+                        <span class="price">$69.99</span>
+                        <button class="button-cart">Add To Cart</button>
+                        <div class="stars">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container1">
+                <div class="fut-plant-in-line">
+                    <img id="plants" src="./assets/future-flowers/pepper-face-plant-small-pot-removebg-preview.png">
+                    <div class="nested-field">
+                        <span class="flower-name">Combo Nisi</span>
+                        <span class="price">$79.99</span>
+                        <button class="button-cart">Add To Cart</button>
+                        <div class="stars">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fut-plant-in-line">
+                    <img id="plants" src="./assets/future-flowers/monstera-deliciosa-plant-pot-removebg-preview.png">
+                    <div class="nested-field">
+                        <span class="flower-name">Combo Nisi</span>
+                        <span class="price">$79.99</span>
+                        <button class="button-cart">Add To Cart</button>
+                        <div class="stars">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container1">
+                <div class="fut-plant-in-line">
+                    <img id="plants"
+                        src="./assets/future-flowers/stephanie-harvey-T0inbt7nRME-unsplash-removebg-preview 1.png">
+                    <div class="nested-field">
+                        <span class="flower-name">Combo Nisi</span>
+                        <span class="price">$79.99</span>
+                        <button class="button-cart">Add To Cart</button>
+                        <div class="stars">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fut-plant-in-line">
+                    <img id="plants" src="./assets/future-flowers/linh-le-Ebwp2-6BG8E-unsplash-removebg-preview 1.png">
+                    <div class="nested-field">
+                        <span class="flower-name">Combo Nisi</span>
+                        <span class="price">$79.99</span>
+                        <button class="button-cart">Add To Cart</button>
+                        <div class="stars">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container1">
+                <div class="fut-plant-in-line">
+                    <img id="plants" src="./assets/future-flowers/galina-n-miziNqvJx5M-unsplash-removebg-preview 2.png">
+                    <div class="nested-field">
+                        <span class="flower-name">Combo Nisi</span>
+                        <span class="price">$79.99</span>
+                        <button class="button-cart">Add To Cart</button>
+                        <div class="stars">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fut-plant-in-line">
+                    <img id="plants"
+                        src="./assets/future-flowers/stephanie-harvey-wDhLrN9FAAM-unsplash-removebg-preview.png">
+                    <div class="nested-field">
+                        <span class="flower-name">Combo Nisi</span>
+                        <span class="price">$79.99</span>
+                        <button class="button-cart">Add To Cart</button>
+                        <div class="stars">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                            <img src="./assets/Star12.png">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <img id="dots" src="./assets/dots.png">
-</section>
-<section class="plant-biography">
-    <div class="base">
-        <p id="p1">Plant Biography</p>
-        <p id="p2">Smoothlu And healthy plant fore you and all people</p>
-        <div id="content-block">
-            <p class="form-block left"> 
-                <img src="./assets/bio/linh-le-Ebwp2-6BG8E-unsplash-removebg-preview 2.png">
-            </p>
-            <p class="form-block center">
-                <img src="./assets/bio/photo-1485955900006-10f4d324d411 4.png">
-                <button class="button-bio">Biography</button>
-            </p>
-            <p class="form-block right">
-                <img class="correction" src="./assets/bio/photo-1501004318641-b39e6451bec6 3.png">
-            </p>
+        <img id="dots" src="./assets/dots.png">
+    </section>
+    <section class="plant-biography">
+        <div class="base">
+            <p id="p1">Plant Biography</p>
+            <p id="p2">Smoothlu And healthy plant fore you and all people</p>
+            <div id="content-block">
+                <p class="form-block left">
+                    <img src="./assets/bio/linh-le-Ebwp2-6BG8E-unsplash-removebg-preview 2.png">
+                </p>
+                <p class="form-block center">
+                    <img src="./assets/bio/photo-1485955900006-10f4d324d411 4.png">
+                    <button class="button-bio">Biography</button>
+                </p>
+                <p class="form-block right">
+                    <img class="correction" src="./assets/bio/photo-1501004318641-b39e6451bec6 3.png">
+                </p>
+            </div>
         </div>
-    </div>
-</section>
-<footer>
+    </section>
+    <footer>
 
-</footer>
+    </footer>
+    <script src="./main.js"></script>
 </body>
+
 </html>

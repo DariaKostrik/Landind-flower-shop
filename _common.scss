@@ -4,12 +4,20 @@ $main-font: 'Poppins', sans-serif;
     box-sizing: border-box;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth; 
+}
 
 header{
     font-family:$main-font;
     left: 0;
     right: 0;
     position: absolute;
+    z-index: 1;
+    padding: 50px 110px 0 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 footer{
     font-family:$main-font;
@@ -83,6 +91,7 @@ padding-left: 3px;
                 transform: translateY(0%);
                 flex-direction: column;
                 position: absolute;
+                z-index: 1;
                 display: flex;
                 align-items: center;
                 gap: 10px;

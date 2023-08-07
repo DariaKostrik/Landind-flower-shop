@@ -3,11 +3,20 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   font-family: "Poppins", sans-serif;
   left: 0;
   right: 0;
   position: absolute;
+  z-index: 1;
+  padding: 50px 110px 0 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer {
@@ -87,6 +96,7 @@ nav {
     transform: translateY(0%);
     flex-direction: column;
     position: absolute;
+    z-index: 1;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -133,19 +143,19 @@ nav {
   padding-top: 183px;
   padding-left: 110px;
 }
-.head-text .pp1 {
+.head-text .head-ornamental {
   font-size: 24px;
   font-weight: 600;
   line-height: 30px;
 }
-.head-text .pp2 {
+.head-text .head-shop-main {
   font-size: 100px;
   font-weight: 500;
   line-height: 125px;
   width: 736px;
   padding-top: 20px;
 }
-.head-text .pp3 {
+.head-text .head-description {
   font-size: 24px;
   font-weight: 400;
   line-height: 40px;
@@ -186,21 +196,26 @@ nav {
 .add-cont {
   width: 100%;
   position: absolute;
-  margin-top: 9%;
+  margin-top: 14%;
 }
 
-#container-with-goods {
-  margin: 129px 90px 100px 90px;
+.container-for-plant-in-line {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 30px;
+}
+.container-for-plant-in-line :first-child {
+  transition: all 0.5s 0.3s;
+}
+
+#container-with-goods {
+  margin: 129px 70px 100px 110px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   position: relative;
   overflow: hidden;
-  padding: 0 25px;
-}
-#container-with-goods:first-child {
-  transition: all 0.5 ease;
 }
 #container-with-goods .plant-in-line {
   width: 400px;
@@ -209,6 +224,7 @@ nav {
   background: #FFF;
   display: flex;
   flex-direction: row;
+  align-self: flex-end;
   flex-shrink: 0;
 }
 #container-with-goods .plant-in-line .image-inline-box {
@@ -287,9 +303,41 @@ nav {
 #container-with-goods .plant-in-line:hover {
   height: 280px;
   background: #588535;
+  transition-delay: 0.1s;
 }
-#container-with-goods .plant-in-line:hover .basic-inf .heart:active {
+#container-with-goods .plant-in-line:hover .basic-inf {
+  position: relative;
+  right: 20px;
+  top: 20px;
+}
+#container-with-goods .plant-in-line:hover .basic-inf .like .heart {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 6;
+}
+#container-with-goods .plant-in-line:hover .basic-inf .like .heart-green {
+  display: none;
+}
+#container-with-goods .plant-in-line:hover .basic-inf .like .heart-white {
+  display: none;
+}
+#container-with-goods .plant-in-line:hover .basic-inf .like:active {
   color: #F6F6F6;
+}
+#container-with-goods .plant-in-line:hover .basic-inf .like:active .heart-white {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 6;
+}
+#container-with-goods .plant-in-line:hover .basic-inf .like:active .heart {
+  display: none;
+}
+#container-with-goods .plant-in-line:hover .basic-inf .like:active .heart-white {
+  display: none;
 }
 #container-with-goods .plant-in-line:hover .basic-inf #name-of-flo {
   color: #FFF;
@@ -317,21 +365,17 @@ nav {
 }
 
 .arrow {
-  margin-top: -7%;
   position: absolute;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
+  z-index: 2;
+  display: block;
+  border: none;
+  background-color: transparent;
   align-self: center;
 }
-.arrow .right-arrow {
-  position: absolute;
-  display: block;
-  right: 0;
+.arrow.right {
+  right: -60px;
 }
-.arrow .left-arrow {
-  position: absolute;
-  display: block;
+.arrow.left {
   left: -45px;
 }
 
@@ -721,12 +765,12 @@ nav {
     padding-left: 15px;
     text-align: center;
   }
-  .head-text .pp1 {
+  .head-text .head-ornamental {
     font-size: 12px;
     font-weight: 600;
     line-height: 15px;
   }
-  .head-text .pp2 {
+  .head-text .head-shop-main {
     font-size: 50px;
     font-weight: 500;
     line-height: 62px;
@@ -734,7 +778,7 @@ nav {
     word-spacing: 999px;
     width: 100%;
   }
-  .head-text .pp3 {
+  .head-text .head-description {
     font-size: 12px;
     font-weight: 400;
     line-height: 20px;
@@ -766,17 +810,32 @@ nav {
     border-radius: 0;
     margin: 0 auto;
   }
+  .arrow {
+    width: 50px;
+  }
+  .arrow.right {
+    right: 7px;
+  }
+  .arrow.left {
+    left: -35px;
+  }
+  .arrow img {
+    height: 80px;
+  }
   #container-with-goods {
+    margin: 30px 30px 30px 30px;
+  }
+  #container-with-goods .container-for-plant-in-line {
     margin: 20px 0 20px 0;
     padding-left: 10px;
     padding-right: 10px;
     flex-direction: row;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
   }
-  #container-with-goods .plant-in-line {
-    width: 160px;
-    height: 90px;
+  #container-with-goods .container-for-plant-in-line .plant-in-line {
+    width: 220px;
+    height: 130px;
     border-radius: 8px;
     background: #FFF;
     display: flex;
@@ -784,116 +843,116 @@ nav {
     align-self: flex-end;
     max-width: 100%;
     max-height: 100%;
-    gap: 5px;
+    gap: 10px;
   }
-  #container-with-goods .plant-in-line .image-inline-box {
+  #container-with-goods .container-for-plant-in-line .plant-in-line .image-inline-box {
     padding: 7px;
   }
-  #container-with-goods .plant-in-line .image-inline-box .plant-photo {
+  #container-with-goods .container-for-plant-in-line .plant-in-line .image-inline-box .plant-photo {
     width: 100%;
     height: auto;
   }
-  #container-with-goods .plant-in-line .basic-inf {
+  #container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf {
     justify-content: end;
     position: relative;
     line-height: 10px;
   }
-  #container-with-goods .plant-in-line .basic-inf .like {
+  #container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .like {
     top: 3px;
     right: 3px;
   }
-  #container-with-goods .plant-in-line .basic-inf .like .heart {
+  #container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .like .heart {
     position: absolute;
     top: 10px;
     right: 10px;
     width: 10%;
   }
-  #container-with-goods .plant-in-line .basic-inf .like .heart-white {
+  #container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .like .heart-white {
     display: none;
   }
-  #container-with-goods .plant-in-line .basic-inf .like .heart-green {
+  #container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .like .heart-green {
     display: none;
   }
-  #container-with-goods .plant-in-line .basic-inf .like:active {
+  #container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .like:active {
     top: 3px;
     right: 3px;
   }
-  #container-with-goods .plant-in-line .basic-inf .like:active .heart {
+  #container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .like:active .heart {
     display: none;
   }
-  #container-with-goods .plant-in-line .basic-inf .like:active .heart-white {
+  #container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .like:active .heart-white {
     display: none;
   }
-  #container-with-goods .plant-in-line .basic-inf .like:active .heart-green {
+  #container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .like:active .heart-green {
     position: absolute;
     top: 10px;
     right: 10px;
     width: 10%;
   }
-  #container-with-goods .plant-in-line .basic-inf #name-of-flo {
+  #container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf #name-of-flo {
     padding: 10px 0 4px 0;
     font-size: 8px;
   }
-  #container-with-goods .plant-in-line .basic-inf .inf-about-flo {
+  #container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .inf-about-flo {
     font-size: 7px;
     font-weight: 400;
   }
-  #container-with-goods .plant-in-line .basic-inf .price {
+  #container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .price {
     font-size: 8px;
   }
-  #container-with-goods .plant-in-line #button {
+  #container-with-goods .container-for-plant-in-line .plant-in-line #button {
     width: 75px;
     height: 18px;
     border-radius: 2px;
     font-size: 7px;
     display: none;
   }
-  #container-with-goods .plant-in-line:hover {
+  #container-with-goods .container-for-plant-in-line .plant-in-line:hover {
     height: 130px;
   }
-  #container-with-goods .plant-in-line:hover .basic-inf .like {
+  #container-with-goods .container-for-plant-in-line .plant-in-line:hover .basic-inf .like {
     top: 3px;
     right: 3px;
   }
-  #container-with-goods .plant-in-line:hover .basic-inf .like .heart {
+  #container-with-goods .container-for-plant-in-line .plant-in-line:hover .basic-inf .like .heart {
     position: absolute;
     top: 10px;
     right: 10px;
     width: 10%;
   }
-  #container-with-goods .plant-in-line:hover .basic-inf .like .heart-white {
+  #container-with-goods .container-for-plant-in-line .plant-in-line:hover .basic-inf .like .heart-white {
     display: none;
   }
-  #container-with-goods .plant-in-line:hover .basic-inf .like .heart-green {
+  #container-with-goods .container-for-plant-in-line .plant-in-line:hover .basic-inf .like .heart-green {
     display: none;
   }
-  #container-with-goods .plant-in-line:hover .basic-inf .like:active .heart {
+  #container-with-goods .container-for-plant-in-line .plant-in-line:hover .basic-inf .like:active .heart {
     display: none;
   }
-  #container-with-goods .plant-in-line:hover .basic-inf .like:active .heart-green {
+  #container-with-goods .container-for-plant-in-line .plant-in-line:hover .basic-inf .like:active .heart-green {
     display: none;
   }
-  #container-with-goods .plant-in-line:hover .basic-inf .like:active .heart-white {
+  #container-with-goods .container-for-plant-in-line .plant-in-line:hover .basic-inf .like:active .heart-white {
     display: block;
     position: absolute;
     right: 5px;
     top: 5px;
     width: 10%;
   }
-  #container-with-goods .plant-in-line:hover .basic-inf #name-of-flo {
+  #container-with-goods .container-for-plant-in-line .plant-in-line:hover .basic-inf #name-of-flo {
     font-size: 9px;
     padding: 10px 0 4px 0;
   }
-  #container-with-goods .plant-in-line:hover .basic-inf .inf-about-flo {
+  #container-with-goods .container-for-plant-in-line .plant-in-line:hover .basic-inf .inf-about-flo {
     font-size: 8px;
   }
-  #container-with-goods .plant-in-line:hover .basic-inf .price {
+  #container-with-goods .container-for-plant-in-line .plant-in-line:hover .basic-inf .price {
     font-size: 10px;
   }
-  #container-with-goods .plant-in-line:hover .basic-inf br {
+  #container-with-goods .container-for-plant-in-line .plant-in-line:hover .basic-inf br {
     display: block;
   }
-  #container-with-goods .plant-in-line:hover #button {
+  #container-with-goods .container-for-plant-in-line .plant-in-line:hover #button {
     display: block;
     margin-top: 0;
     margin-bottom: 0;
