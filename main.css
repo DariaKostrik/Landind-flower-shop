@@ -205,10 +205,6 @@ nav {
   flex-wrap: nowrap;
   gap: 30px;
 }
-.container-for-plant-in-line :first-child {
-  transition: all 0.5s 0.3s;
-}
-
 #container-with-goods {
   margin: 129px 70px 100px 110px;
   display: flex;
@@ -217,7 +213,11 @@ nav {
   position: relative;
   overflow: hidden;
 }
-#container-with-goods .plant-in-line {
+#container-with-goods .container-for-plant-in-line {
+  height: 280px;
+}
+#container-with-goods .container-for-plant-in-line .plant-in-line {
+  transition: all 0.5s 0.3s;
   width: 400px;
   height: 200px;
   border-radius: 18px;
@@ -227,68 +227,68 @@ nav {
   align-self: flex-end;
   flex-shrink: 0;
 }
-#container-with-goods .plant-in-line .image-inline-box {
+#container-with-goods .container-for-plant-in-line .plant-in-line .image-inline-box {
   align-self: center;
   width: 37%;
 }
-#container-with-goods .plant-in-line .image-inline-box .plant-photo {
+#container-with-goods .container-for-plant-in-line .plant-in-line .image-inline-box .plant-photo {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-#container-with-goods .plant-in-line .basic-inf {
+#container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf {
   width: 63%;
   justify-content: end;
 }
-#container-with-goods .plant-in-line .basic-inf .like {
+#container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .like {
   position: relative;
   right: 20px;
   top: 20px;
 }
-#container-with-goods .plant-in-line .basic-inf .like .heart {
+#container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .like .heart {
   display: block;
   position: absolute;
   right: 20px;
   top: 20px;
 }
-#container-with-goods .plant-in-line .basic-inf .like .heart-green {
+#container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .like .heart-green {
   display: none;
 }
-#container-with-goods .plant-in-line .basic-inf .like .heart-white {
+#container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .like .heart-white {
   display: none;
 }
-#container-with-goods .plant-in-line .basic-inf .like:active .heart {
+#container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .like:active .heart {
   display: none;
 }
-#container-with-goods .plant-in-line .basic-inf .like:active .heart-green {
+#container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .like:active .heart-green {
   display: block;
   position: absolute;
   right: 20px;
   top: 20px;
 }
-#container-with-goods .plant-in-line .basic-inf .like:active .heart-white {
+#container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .like:active .heart-white {
   display: none;
 }
-#container-with-goods .plant-in-line .basic-inf #name-of-flo {
+#container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf #name-of-flo {
   padding: 40px 0 10px 0;
   color: #22271C;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
 }
-#container-with-goods .plant-in-line .basic-inf .inf-about-flo {
+#container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .inf-about-flo {
   color: #777A73;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
-#container-with-goods .plant-in-line .basic-inf .price {
+#container-with-goods .container-for-plant-in-line .plant-in-line .basic-inf .price {
   color: #22271C;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 700;
 }
-#container-with-goods .plant-in-line #button {
+#container-with-goods .container-for-plant-in-line .plant-in-line #button {
   width: 130px;
   height: 40px;
   border-radius: 5px;
@@ -308,13 +308,14 @@ nav {
 #container-with-goods .plant-in-line:hover .basic-inf {
   position: relative;
   right: 20px;
+  left: 3px;
   top: 20px;
 }
 #container-with-goods .plant-in-line:hover .basic-inf .like .heart {
   display: block;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 17px;
+  top: 17px;
   z-index: 6;
 }
 #container-with-goods .plant-in-line:hover .basic-inf .like .heart-green {
@@ -329,14 +330,14 @@ nav {
 #container-with-goods .plant-in-line:hover .basic-inf .like:active .heart-white {
   display: block;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 17px;
+  top: 17px;
   z-index: 6;
 }
 #container-with-goods .plant-in-line:hover .basic-inf .like:active .heart {
   display: none;
 }
-#container-with-goods .plant-in-line:hover .basic-inf .like:active .heart-white {
+#container-with-goods .plant-in-line:hover .basic-inf .like:active .heart-green {
   display: none;
 }
 #container-with-goods .plant-in-line:hover .basic-inf #name-of-flo {
@@ -908,7 +909,8 @@ nav {
     display: none;
   }
   #container-with-goods .container-for-plant-in-line .plant-in-line:hover {
-    height: 130px;
+    background: #588535;
+    transition-delay: 0.1s;
   }
   #container-with-goods .container-for-plant-in-line .plant-in-line:hover .basic-inf .like {
     top: 3px;
