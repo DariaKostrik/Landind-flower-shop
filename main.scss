@@ -97,11 +97,8 @@
 
 .container-for-plant-in-line {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     gap:30px;
     & :first-child{
-        // transition: all 0.5s 0.3s;
     }
 }
 
@@ -121,10 +118,7 @@
             border-radius: 18px;
             background: #FFF;
             display: flex;
-            flex-direction: row;
             align-self: flex-end;
-            // max-width: 100%;
-            // max-height: 100%; 
             flex-shrink: 0;
             
             
@@ -243,7 +237,6 @@
                 .heart-green {
                     display: none;
                 }
-
                 .heart-white {
                     display: none;
                 }
@@ -259,11 +252,9 @@
                     top: 17px;
                     z-index: 6;
                 }
-
                 .heart {
                     display: none;
                 }
-
                 .heart-green {
                     display: none;
                 }
@@ -535,7 +526,6 @@
     width: 182px;
     height: 60px;
     color: #588535;
-    text-align: center;
     font-size: 20px;
     font-weight: 500;
     border-radius: 8px 0 8px 0;
@@ -554,7 +544,6 @@
     padding-left: 110px;
     padding-right: 120px;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
@@ -584,8 +573,6 @@
 
     .fut-plant-in-line {
         display: flex;
-        align-self: flex-end;
-        align-items: flex-end;
         flex-wrap: wrap;
         width: 357.5px;
         height: 459px;
@@ -822,7 +809,7 @@
             margin: 20px 0 20px 0;
             padding-left: 10px;
             padding-right: 10px;
-            flex-direction: row;
+            // flex-direction: row;
             justify-content: center;
             gap: 10px;
             height: 130px;
